@@ -1,10 +1,45 @@
+/* Google Font: Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jaro:opsz@6..72&family=Lexend:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Google Font: Roboto Mono */
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jaro:opsz@6..72&family=Lexend:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* :root {
+:root {
+  --white-color: #fff;
+  --black-color: #000;
 
-} */
+  --brown60-color: #AE9B84;
+  --brown65-color: #B8A893;
+  --brown70-color: #C2B4A3;
+  --brown80-color: #D6CDC2;
+  --brown90-color: #EBE6E0;
+  --brown95-color: #F5F3F0;
+  --brown97-color: #F9F8F6;
+  --brown99-color: #FDFDFC;
+
+  --black06-color: #0F0F0F;
+  --black10-color: #1A1A1A;
+  --black12-color: #1F1F1F;
+  --black15-color: #262626;
+  --black20-color: #333333;
+  --black25-color: #404040;
+  --black30-color: #4D4D4D;
+  --black35-color: #595959;
+
+  --gray40-color: #676665;
+  --gray50-color: #81807E;
+  --gray70-color: #B3B3B2;
+  --gray80-color: #CCCCCC;
+  --gray90-color: #E6E6E6;
+  --gray95-color: #F2F2F2;
+  --gray97-color: #F7F7F7;
+  --gray99-color: #FCFCFC;
+
+  --main-font: "Roboto", serif;
+  --second-font: "Roboto Mono", serif;
+}
 
 
