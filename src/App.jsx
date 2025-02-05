@@ -1,5 +1,10 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Home from './Pages/Home/Home'
+import Products from './Pages/Products/Products'
+import ProductDetails from './Pages/ProductDetails/ProductDetails'
+import Contact from './Pages/Contact/Contact'
+import Cart from './Pages/Cart/Cart'
 
 function App() {
 
