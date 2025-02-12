@@ -1,0 +1,117 @@
+.es-product-card {
+    padding: 30px;
+}
+
+.es-product-img {
+    width: 471px;
+    height: 386px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    overflow: hidden;
+}
+
+.es-product-card-row {
+    padding-top: 38px;
+    padding-bottom: 20px;
+}
+
+.es-product-card-row .es-category {
+    padding: 10px 16px;
+    margin: auto 0;
+    background-color: var(--black10-color);
+    border: 1px dashed var(--black15-color);
+    border-radius: 100px;
+}
+
+.es-product-card-row .es-category span {
+    font-size: 1.126rem;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: var(--main-font);
+    color: var(--gray70-color);
+}
+
+.es-product-title {
+    color: var(--white-color);
+    font-family: var(--second-font);
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    word-spacing: 1px;
+}
+
+.es-product-details {
+    gap: 20px;
+    justify-content: flex-start;
+    font-family: var(--second-font);
+    margin-top: 14px;
+}
+
+.es-product-details .es-product-fit span,
+.es-product-details .es-product-price span {
+    color: var(--gray50-color);
+}
+
+.es-product-details .es-product-fit,
+.es-product-details .es-product-price {
+    color: var(--gray80-color);
+    display: flex;
+    gap: 8px;
+}
+
+.es-card-btn {
+    padding: 18px 24px;
+    border-radius: 12px;
+    border: 1px dashed var(--black25-color);
+    color: var(--white-color);
+    background-color: var(--black12-color);
+    font-family: var(--main-font);
+}
+
+@media (max-width: 1919px) {
+    .es-product-card {
+        padding: 20px;
+    }
+
+    .es-product-img {
+        width: 356px;
+        height: 291px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .es-product-card-row {
+        padding-top: 24px;
+        padding-bottom: 16px;
+    }
+
+    .es-product-card-row .es-category {
+        padding: 8px 12px;
+        margin: auto 0;
+
+    }
+
+    .es-product-card-row .es-category span {
+        font-size: 0.875rem;
+        line-height: 1.3125rem;
+    }
+
+    .es-product-title {
+        font-size: 1.125rem;
+        line-height: 1.6875rem;
+    }
+
+    .es-product-details {
+        gap: 16px;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    .es-product-details .es-product-fit span,
+    .es-product-details .es-product-price span {
+        font-size: 0.875rem;
+    }
+    .es-card-btn {
+        padding: 14px 16px;
+        border-radius: 8px;
+    }
+}
