@@ -1,0 +1,73 @@
+.adComponent {
+  background-color: var(--brown70-color);
+  width: 82.5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px;
+  margin: 0 auto;
+  background-image: url("../assets/imgs/Ad/Vector.webp");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-bottom: 100.5px;
+}
+
+.adContent {
+  width: 75.2146465%;
+}
+
+.adContent h4 {
+  text-transform: uppercase;
+  font-family: "Roboto";
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 69.6px;
+}
+
+.adContent p {
+  font-family: "Roboto";
+  margin-top: 16px;
+}
+
+.adComponent button {
+  /* width: 11.4831776%; */
+  background-color: var(--black12-color);
+  padding: 18px 24px;
+  border: 0;
+  color: var(--white-color);
+  font-family: "Roboto";
+}
+
+.adComponent img {
+  position: absolute;
+  right: 0;
+}
+
+
+/* start media */
+@media (max-width:1440px) {
+  .adComponent {
+    padding: 80px;
+    width: 88.8888%;
+    /* justify-content: space-between; */
+  }
+
+  .adContent {
+    width: 75.8125%;
+  }
+
+  .adContent h4 {
+    font-size: 48px;
+    line-height: 57.6px;
+  }
+
+  .adContent p {
+    margin-top: 12px;
+  }
+
+  .adComponent button {
+    padding: 14px 20px;
+  }
+}
+
+@media (max-width: 390px) {}

@@ -1,0 +1,10 @@
+.ET-socialIcons {
+  width: 20.3934%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.ET-socialFooterIcon {
+  padding: 16px;
+  background-color: var(--brown80-color);
+}

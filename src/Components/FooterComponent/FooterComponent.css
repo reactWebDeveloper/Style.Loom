@@ -1,0 +1,68 @@
+.footerFirstPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.footerSecondPart {
+  padding: 96.5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.email {
+  width: 29.9918546%;
+}
+
+.email h6 {
+  font-family: "Roboto";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 25.78px;
+  color: var(--white-color);
+}
+
+.emailInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.emailInput input {
+  background-color: var(--black10-color);
+  padding: 24px 18px;
+  border: 0;
+  width: 100%;
+}
+.emailInput button {
+  background: transparent;
+  border: 0;
+  position: absolute;
+  right: 24px;
+}
+
+.emailInput input::placeholder {
+  font-family: "Roboto Mono";
+}
+.emailArrow {
+  width: 24px;
+  height: 24px;
+  color: var(--white-color);
+}
+.footerThirdPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--gray50-color);
+  font-family: "Roboto Mono";
+  padding: 50px 0;
+}
+.footerThirdPart a {
+  color: var(--gray50-color);
+  text-decoration: none;
+}
