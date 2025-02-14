@@ -14,7 +14,11 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="p-162">
+        <nav>
+            <div className="MR-sideBox">
+
+            </div>
+            <div className="p-162">
                 <div className={`MR-navContainer ${menuOpen ? "active" : ""}`}>
                     <div className="MR-buttonContainer">
                         <button className="MR-homeButton text-btn-18">Home</button>
@@ -40,12 +44,19 @@ export default function Navbar() {
 
                 <div className="MR-responsiveNav">
                     <div>
+
                         <img className="MR-logo2" src={logo} alt="logo" />
                     </div>
+                    <div className="MR-responsiveNavButtonContainer">
+                    <button className="MR-basketButton">
+                            <img src={basket} alt="basket" />
+                        </button>
                     <button className="MR-toggleIcon" onClick={toggleMenu}>
                         <img src={ToggleIcon} alt="Toggle Icon" />
                     </button>
+                    </div>
                 </div>
+            </div>
             </nav>
         </>
     );

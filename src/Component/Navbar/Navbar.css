@@ -1,15 +1,64 @@
 nav {
     background-color: var(--black06-color);
-    border-bottom: 1px dashed var(--black15-color);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    position: relative;
+
 }
+
+.MR-sideBox {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 16%;
+    left: 2%;
+}
+
+.MR-sideBox::before,
+.MR-sideBox::after {
+    content: "";
+    position: absolute;
+    background: var(--black15-color);
+    pointer-events: none; /* منع التفاعل مع الخط */
+}
+
+.MR-sideBox::before {
+    width: 40px; /* عرض البوردر */
+    height: 2px;
+    top:70px;
+    left: 100%;
+    transform: translate(-50%, -50%); /* توسيط العنصر */
+    background: repeating-linear-gradient(
+        to right,
+        var(--black15-color),
+        var(--black15-color) 5px,
+        transparent 5px,
+        transparent 10px
+    );
+}
+
+.MR-sideBox::after {
+    width: 2px;
+    height: 40px; /* طول البوردر */
+    top: 50%;
+    left: 140%;
+    transform: translate(-50%, -50%); /* توسيط العنصر */
+    background: repeating-linear-gradient(
+        to bottom,
+        var(--black15-color),
+        var(--black15-color) 5px,
+        transparent 5px,
+        transparent 10px
+    );
+}
+
 
 .MR-navContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: transform 0.5s ease-in-out;
+    padding: 29px 0;
+    border-bottom: 1px dashed var(--black15-color);
+
 }
 
 .MR-buttonContainer,
@@ -56,7 +105,6 @@ nav {
     height: 28px;
 }
 
-/* ✅ القائمة الجانبية عند الأجهزة الصغيرة */
 .MR-responsiveNav {
     display: none;
 }
@@ -73,10 +121,11 @@ nav {
 }
 
 @media (max-width: 1440px) {
-    nav {
-        padding-top: 24px;
-        padding-bottom: 24px;
+    .MR-navContainer {
+        padding: 23px 0;
     }
+
+    
 
     .MR-homeButton,
     .MR-productButton,
@@ -150,4 +199,14 @@ nav {
         width: 30px;
         height: 30px;
     }
+    .MR-buttonContainer2 .MR-basketButton{
+        display: none;
+    }
+    .MR-responsiveNavButtonContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
 }

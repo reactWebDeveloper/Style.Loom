@@ -57,19 +57,19 @@
 }
 
 .p-162 {
-  padding-inline: 10.125rem;
+  padding-inline: 8.4375%;
 }
 
 .p-80 {
-  padding-inline: 5rem;
+  padding-inline:4.16669%;
 }
 
 .p-60 {
-  padding-inline: 3.75rem;
+  padding-inline: 3.125%;
 }
 
 .p-30 {
-  padding-inline: 1.875rem;
+  padding-inline: 1.5625%;
 }
 
 .rounded-12 {
@@ -112,26 +112,20 @@
 
 
 
-@media (max-width: 1440) {
+@media (max-width: 1440px) {
   .border2 {
     border: 1.5px dashed var(--black15-color);
   }
 
   .p-162 {
-    padding-inline: 5rem;
+    padding-inline:5.5559%;
   }
-
-  .p-80 {
-    padding-inline: 3.75rem;
-  }
-
   .p-60 {
-    padding-inline: 3.125rem;
+    padding-inline: 3.47229%;
   }
 
   .p-30 {
-    /* padding-inline: 20px; */
-    padding-inline: 1.25rem;
+    padding-inline: 1.38889%;
   }
 
   .rounded-12 {
@@ -164,35 +158,32 @@
 
 }
 
-@media (max-width: 390) {
+@media (max-width: 390px) {
   .border2 {
     border: 1px dashed var(--black15-color);
   }
 
   .p-162 {
-    padding-inline: 1rem;
+    padding-inline: 4.10256410256%;
   }
 
   .p-80 {
-    padding-inline: 1.25rem;
+    padding-inline: 5.1289%;
   }
-
   .p-60 {
-    padding-inline: 1.857rem;
+    padding-inline:7.6929%;
   }
   .rounded-20 {
     border-radius: 0.875rem;
   }
- .text-48{
+.text-48{
   font-size: 1.75rem;
   line-height: 2.05062rem;
 }
-
 .text-24 {
   font-size: 1.125rem;
   line-height: 1.6875rem;
 }
-
 .text-18{
   font-size: 0.875rem;
   line-height: 1.3125rem;
