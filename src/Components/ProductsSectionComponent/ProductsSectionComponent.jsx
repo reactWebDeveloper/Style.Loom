@@ -27,8 +27,9 @@ export default function ProductsSectionComponent() {
           </ul>
         </div>
         <div className="es-products d-flex flex-wrap">
-          {filteredProducts.map((product) => (
+          {filteredProducts.map((product, index) => (
             <ProductComponent
+              id={index}
               img={product.img}
               title={product.title}
               category={product.category}

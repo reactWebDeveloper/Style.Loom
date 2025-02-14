@@ -1,10 +1,9 @@
 import React from 'react'
 import './ProductComponent.css'
 
-export default function ProductComponent({img, title, price, fit, category}) {
+export default function ProductComponent({img, title, price, fit, category, id}) {
   return (
-    <div>
-      <div className="es-product-card d-flex flex-column">
+      <div className="es-product-card d-flex flex-column" id={id}>
         <div className="es-product-img">
           <img src={img} alt={title} className='img-fluid' />
         </div>
@@ -18,6 +17,5 @@ export default function ProductComponent({img, title, price, fit, category}) {
           <div className="es-product-price"><span>Price.</span>${price}</div>
         </div >
       </div>
-    </div>
   )
 }

@@ -1,5 +1,6 @@
 .es-main-products-container {
     padding-top: 5.2%;
+    width: 100%;
 }
 
 .es-products-section {
@@ -16,7 +17,7 @@
 }
 
 .es-tabs {
-    padding: 5rem;
+    padding: 60px;
     font-family: var(--second-font);
     gap: 14px;
     color: var(--gray70-color);
@@ -34,4 +35,19 @@
 .es-tab:hover {
     background-color: var(--brown70-color);
     color: var(--black06-color);
+}
+
+@media (max-width: 540px) {
+    .es-tabs {
+        padding-bottom: 30px;
+        padding-left: 20px;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+        gap: 10px;
+    }
+    .es-tab {
+        padding: 14px 24px;
+    }
 }
