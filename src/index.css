@@ -158,7 +158,7 @@
 
 }
 
-@media (max-width: 390) {
+@media (max-width: 390px) {
   .border2 {
     border: 1px dashed var(--black15-color);
   }
