@@ -1,0 +1,94 @@
+.AA-trends-card{
+    position: relative;
+    width: 530px;
+    padding: 60px;
+}
+
+.AA-bg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 186px;
+    height: 186px;
+}
+
+.AA-icon{
+    padding-bottom: 50px;
+}
+
+.AA-card-title{
+    color: var(--white-color);
+    padding-bottom: 16px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.AA-card-desc{
+    color: var(--gray50-color);
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+@media (max-width: 1919px) {
+
+    .AA-trends-card{
+        width: 370px;
+        padding: 50px;
+    }
+
+    .AA-bg{
+        width: 150px;
+        height: 150px;
+    }
+
+    .AA-icon{
+        padding-bottom: 40px;
+        width: 76px;
+        height: 76px;
+    }
+
+    .AA-card-title{
+        padding-bottom: 12px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .AA-card-desc{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .AA-trends-card{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .AA-bg{
+        width: 100px;
+        height: 100px;
+    }
+
+    .AA-icon{
+        padding-bottom: 40px;
+        width: 76px;
+        height: 76px;
+    }
+
+    .AA-card-title{
+        padding-bottom: 12px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .AA-card-desc{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
