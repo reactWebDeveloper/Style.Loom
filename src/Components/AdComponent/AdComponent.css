@@ -1,18 +1,18 @@
 .adComponent {
-  background-color: var(--brown70-color);
-  width: 82.5%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 100px;
-  margin: 0 auto;
-  background-image: url("../assets/imgs/Ad/Vector.webp");
-  background-repeat: no-repeat;
-  background-position: right;
-  margin-bottom: 100.5px;
+  margin: 0 168px 100.5px 168px;
 }
 
 .adContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+  background-color: var(--brown70-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.adText {
   width: 75.2146465%;
 }
 
@@ -22,38 +22,42 @@
   font-size: 58px;
   font-weight: 500;
   line-height: 69.6px;
+  position: relative;
+  z-index: 1;
 }
 
 .adContent p {
   font-family: "Roboto";
   margin-top: 16px;
+  position: relative;
+  z-index: 1;
 }
 
 .adComponent button {
-  /* width: 11.4831776%; */
+  font-family: "Roboto";
   background-color: var(--black12-color);
   padding: 18px 24px;
   border: 0;
   color: var(--white-color);
-  font-family: "Roboto";
+  position: relative;
+  z-index: 1;
 }
 
-.adComponent img {
+.adContent img {
   position: absolute;
   right: 0;
 }
 
 
 /* start media */
-@media (max-width:1440px) {
+/* figma design */
+@media (max-width:1919px) {
   .adComponent {
-    padding: 80px;
-    width: 88.8888%;
-    /* justify-content: space-between; */
+    margin: 0 80px 80px;
   }
 
   .adContent {
-    width: 75.8125%;
+    padding: 80px;
   }
 
   .adContent h4 {
@@ -70,4 +74,55 @@
   }
 }
 
-@media (max-width: 390px) {}
+@media (max-width:1200px) {
+  .adContent img {
+    top: 0;
+  }
+}
+
+@media (max-width:992px) {
+  .adContent {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .adComponent button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .adContent img {
+    width: 306px;
+  }
+
+}
+
+/* figma design */
+@media (max-width: 540px) {
+  .adComponent {
+    margin: 0 16px 50px 16px;
+  }
+
+  .adContent {
+    padding: 50px 30px;
+  }
+
+  .adText {
+    width: 100%;
+  }
+
+  .adContent h4 {
+    font-size: 38px;
+    line-height: 45.6px;
+  }
+
+  .adContent p {
+    margin-top: 12px;
+  }
+
+  .adContent img {
+    right: -80px;
+    top: -20px;
+  }
+}

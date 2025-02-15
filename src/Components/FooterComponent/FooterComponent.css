@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 0;
+  padding: 100px 162px;
 }
 
 .footerSecondPart {
-  padding: 96.5px 0;
+  padding: 96.5px 162px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,43 +26,173 @@
 }
 
 .emailInput {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 30px;
   position: relative;
 }
 
 .emailInput input {
   background-color: var(--black10-color);
-  padding: 24px 18px;
+  padding: 18px 24px;
   border: 0;
   width: 100%;
 }
+
+.emailInput input::placeholder {
+  font-family: "Roboto Mono";
+}
+
 .emailInput button {
+  width: 24px;
+  height: 24px;
   background: transparent;
   border: 0;
   position: absolute;
   right: 24px;
 }
 
-.emailInput input::placeholder {
-  font-family: "Roboto Mono";
-}
-.emailArrow {
-  width: 24px;
-  height: 24px;
-  color: var(--white-color);
-}
 .footerThirdPart {
+  font-family: "Roboto Mono";
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--gray50-color);
-  font-family: "Roboto Mono";
-  padding: 50px 0;
+  padding: 50px 162px;
 }
+
 .footerThirdPart a {
   color: var(--gray50-color);
   text-decoration: none;
+}
+
+
+/* start media */
+/* figma design */
+@media (max-width:1919px) {
+  .footerFirstPart {
+    padding: 80px;
+  }
+
+  .footerFirstPart .logo {
+    width: 49.3%;
+  }
+
+  .footerSecondPart {
+    padding: 72.5px 80px;
+    gap: 50px;
+  }
+
+  .email h6 {
+    font-size: 18px;
+    line-height: 21.09px;
+  }
+
+  .emailInput {
+    margin-top: 24px;
+  }
+
+  .emailInput input {
+    padding: 14px 20px;
+  }
+
+  .emailInput input::placeholder {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .emailInput button {
+    width: 20px;
+    height: 20px;
+    right: 20px;
+  }
+
+  .footerThirdPart {
+    padding: 40px 80px;
+  }
+
+  .footerThirdPart span,
+  .footerThirdPart a {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width:1439px) {
+  .footerFirstPart .logo {
+    width: 40%;
+  }
+}
+
+@media (max-width:1200px) {
+  .footerSecondPart {
+    gap: 45px;
+    flex-wrap: wrap;
+  }
+
+  .email {
+    width: 100%;
+  }
+
+  .email h6 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .emailInput input {
+    padding: 11px 20px;
+  }
+}
+
+.footerThirdPart {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width:992px) {
+  .footerFirstPart {
+    gap: 30px;
+  }
+}
+
+@media (max-width:768px) {
+  .footerFirstPart {
+    flex-wrap: wrap;
+  }
+
+  .footerFirstPart .logo {
+    width: 100%;
+  }
+}
+
+/* figma design */
+@media (max-width:540px) {
+  .footerFirstPart {
+    padding: 50px 16px;
+  }
+
+  .footerSecondPart {
+    padding: 40px 16px;
+    gap: 30px;
+  }
+
+  .email h6 {
+    font-size: 16px;
+    line-height: 18.75px;
+  }
+
+  .emailInput {
+    margin-top: 20px;
+  }
+
+  .emailInput input {
+    padding: 14px 20px;
+  }
+
+  .emailInput button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footerThirdPart {
+    padding: 30px 16px;
+  }
 }

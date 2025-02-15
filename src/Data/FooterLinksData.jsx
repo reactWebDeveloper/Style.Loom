@@ -3,7 +3,7 @@ export const FooterLinksData = [
     title: "Home",
     link1: "Why Us",
     link2: "About",
-    link3: "Testemonials",
+    link3: "Testimonials",
     link4: "FAQ’S",
   },
   {
@@ -12,5 +12,4 @@ export const FooterLinksData = [
     link2: "Womenswear",
     link3: "Kidswear",
   }
-
 ]
