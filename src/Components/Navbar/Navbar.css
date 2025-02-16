@@ -1,0 +1,243 @@
+/* Navbar styling */
+nav {
+    background-color: var(--black06-color);
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+}
+
+/* Main Navbar container */
+.MR-navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 0;
+    border-bottom: 1.9px dashed var(--black15-color);
+    transition: transform 1s ease-in-out;
+}
+
+/* Buttons container */
+.MR-buttonContainer,
+.MR-buttonContainer2 {
+    display: flex;
+    gap: 14px;
+}
+
+/* Home button styling */
+.activeLink {
+    background-color: var(--black10-color);
+    color: var(--gray70-color);
+    border: none;
+    padding: 18px 30px;
+    cursor: pointer;
+}
+
+.MR-notActive {
+    background-color: transparent;
+    color: var(--gray70-color);
+    border: 1.5px dashed var(--black15-color);
+    padding: 18px 24px;
+    cursor: pointer;
+}
+
+/* Logo styling */
+.MR-logo {
+    width: 151px;
+    height: 28px;
+}
+
+/* Basket button styling */
+.MR-basketButton {
+    padding: 18px;
+    border: none;
+    background-color: var(--black10-color);
+    cursor: pointer;
+}
+
+/* Basket button image styling */
+.MR-basketButton img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Contact button styling */
+.MR-contactButton {
+    background-color: var(--brown60-color);
+    border: none;
+    padding: 18px 30px;
+    font-weight: 500 !important;
+    cursor: pointer;
+}
+
+/* Responsive nav styling */
+.MR-responsiveNav {
+    display: none;
+}
+
+/* Toggle icon styling */
+.MR-toggleIcon {
+    padding: 14px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--brown60-color);
+}
+
+/* Close button styling */
+.MR-closeButton {
+    display: none;
+}
+
+/* Media queries for 1919px screen sizes */
+@media (max-width: 1919px) {
+    .MR-navContainer {
+        padding: 24px 0;
+    }
+
+    .MR-buttonContainer,
+    .MR-buttonContainer2 {
+        gap: 10px;
+    }
+
+    .activeLink {
+        padding: 14px 24px;
+    }
+
+    .MR-notActive {
+        padding: 14px 20px;
+    }
+
+
+    .MR-contactButton {
+        padding: 14px 30px;
+    }
+
+    .MR-basketButton {
+        padding: 14px;
+    }
+
+    .MR-basketButton img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Media queries for 786px screen sizes */
+@media (max-width: 768px) {
+
+    /* Hide main logo */
+    .MR-logo {
+        display: none;
+    }
+
+    /* Adjust navigation container for mobile */
+    .MR-navContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: fixed;
+        width: 90%;
+        height: 90vh;
+        background: rgba(0, 0, 0, 0.8);
+        top: 0;
+        left: 5%;
+        transform: translateY(-100%);
+        transition: transform 0.7s ease-in-out;
+        z-index: -100;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        backdrop-filter: blur(10px);
+
+    }
+
+    /* Button width for mobile */
+    .activeLink,
+    .MR-notActive,
+    .MR-contactButton {
+        width: 270px;
+    }
+
+    /* Active nav menu */
+    .MR-navContainer.active {
+        transform: translateY(0);
+    }
+
+    /* Adjust button containers */
+    .MR-buttonContainer,
+    .MR-buttonContainer2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    /* Responsive navbar */
+    .MR-responsiveNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Small logo for responsive nav */
+    .MR-logo2 {
+        width: 120px;
+    }
+
+    /* Close button display for responsive menu */
+    .MR-closeButton {
+        display: block;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .MR-closeButton img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Hide basket button in mobile view */
+    .MR-buttonContainer2 .MR-basketButton {
+        display: none;
+    }
+
+    /* Container for nav buttons in mobile view */
+    .MR-responsiveNavButtonContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .MR-basketButton img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 389px) {
+    .MR-basketButton {
+        padding: 12px;
+    }
+
+    .MR-basketButton img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Adjust toggle icon for small screens */
+    .MR-toggleIcon {
+        padding: 12px;
+    }
+
+    .MR-toggleIcon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Adjust button container spacing */
+    .MR-responsiveNavButtonContainer {
+        gap: 6px;
+    }
+}
