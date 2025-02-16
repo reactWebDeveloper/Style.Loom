@@ -5,6 +5,7 @@ import Products from './Pages/Products/Products'
 import ProductDetails from './Pages/ProductDetails/ProductDetails'
 import Contact from './Pages/Contact/Contact'
 import Cart from './Pages/Cart/Cart'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
