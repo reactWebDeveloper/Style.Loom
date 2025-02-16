@@ -1,0 +1,215 @@
+.StepsComponent{
+    margin-top: 100px;
+}
+.stepComponentContainer{
+    background-color: var(--black06-color);
+    position: relative;
+    border: 1px dashed #262626;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.titleContaine{
+    width: 100%;
+}
+.stepComponentContainer .steps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px dashed #262626;
+}
+.stepComponentContainer .steps .step{
+    flex: 1;
+    padding: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-right: 1px dashed #262626;
+}
+.stepComponentContainer .steps .step span{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: var(--second-font);
+    color: var(--gray40-color);
+    margin-bottom: 30px;
+}
+.stepComponentContainer .steps .step h4{
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    font-family: var(--main-font);
+    color: var(--white-color);
+    margin-bottom: 16px;
+}
+.stepComponentContainer .steps .step p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: var(--main-font);
+    color: var(--gray40-color);
+}
+
+@media (max-width:1440px){
+    .stepComponentContainer .steps .step{
+        padding: 40px;
+    }
+    .stepComponentContainer .steps .step span{
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 24px;
+    }
+    .stepComponentContainer .steps .step h4{
+        font-size: 22px;
+        line-height: 33px;
+        margin-bottom: 12px;
+    }
+    .stepComponentContainer .steps .step p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media (max-width:1200px){
+    .stepComponentContainer .steps .step{
+        padding: 30px;
+    }
+    .stepComponentContainer .steps .step span{
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 22px;
+    }
+    .stepComponentContainer .steps .step h4{
+        font-size: 22px;
+        line-height: 33px;
+        margin-bottom: 10px;
+    }
+    .stepComponentContainer .steps .step p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media (max-width:992px){
+    .stepComponentContainer .steps .step{
+        padding: 25px;
+    }
+    .stepComponentContainer .steps .step span{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .stepComponentContainer .steps .step h4{
+        font-size: 20px;
+        line-height: 33px;
+        margin-bottom: 10px;
+    }
+    .stepComponentContainer .steps .step p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+@media (max-width:390px){
+    .stepComponentContainer .steps{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px dashed #262626;
+    }
+    .stepComponentContainer .steps .step{
+        padding: 30px;
+        border-bottom: 1px dashed #262626;
+    }
+    .stepComponentContainer .steps .step span{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .stepComponentContainer .steps .step h4{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .stepComponentContainer .steps .step p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* this worked for the horizontal border */
+/* .borderTest{
+    position: absolute;
+    top: -6px;
+    height: calc(100% + 12px);
+    width: calc(100% + 12px);
+    left: -6px;
+    border: 3px solid transparent;
+    background-image: linear-gradient(to bottom, #262626 50%, transparent 50%);
+    background-clip: padding-box;
+    background-size: 1px 32px;
+    padding: 0px;
+    z-index: -1;
+    border-radius: 20px;
+} */
+
+/* this worked for the vertical border */
+/* .borderTest {
+    position: absolute;
+    top: -6px;
+    bottom: -6px;
+    left: -6px;
+    right: -6px;
+    height: calc(100% + 12px);
+    width: calc(100% + 12px);
+    border: 3px solid transparent;
+    background-image: linear-gradient(to right, #262626 50%, transparent 50%);
+    background-clip: padding-box;
+    background-size: 20px 1px;
+    padding: 0px;
+    z-index: -1;
+    border-radius: 20px;
+}
+/*trying to merge them together*/
+/* .borderTest::before{
+    content: '';
+    position: absolute;
+    height: calc(100% + 12px);
+    width: calc(100% + 12px);
+    border: 3px solid transparent;
+    background-image: linear-gradient(to bottom, #262626 50%, transparent 50%);
+    background-clip: padding-box;
+    background-size: 1px 32px;
+} */
