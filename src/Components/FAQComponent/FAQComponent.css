@@ -1,0 +1,206 @@
+.Af-FAQComponent-father {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.Af-FAQComponent {
+    font-family: var(--main-font);
+    width: 100%;
+    overflow: hidden;
+}
+
+.Af-FAQComponent-title {
+    background: url(/src/assets/imgs/Vector.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-right: 300px;
+    padding-left: 80px;
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.Af-FAQComponent-title h2 {
+    color: var(--white-color);
+    margin-bottom: 30px;
+    Text-transform: uppercase;
+}
+
+.Af-FAQComponent-title p {
+    color: var(--gray40-color);
+    margin-bottom: 50px;
+}
+
+.Af-FAQComponent-btns {
+    display: flex; 
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 14px;
+}
+.Af-FAQComponent-btns::-webkit-scrollbar{
+    display: none;
+}
+.Af-FAQ-btn {
+    background: inherit;
+    padding: 18px 24px;
+    color: var(--gray70-color);
+    font-family: var(--second-font);
+    height: 63px;
+}
+
+.AF-activeBtn{
+    background: var(--brown70-color);
+    color: var(--black06-color);
+    padding: 18px 30px;
+}
+
+
+.Af-FAQComponent-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.Af-left-border {
+    padding: 60px;
+    gap: 16px;
+    width: 50%;
+    border-left: 2px dashed var(--black15-color);
+    border-bottom: 2px dashed var(--black15-color);
+
+} 
+
+.Af-left-right-border {
+    padding: 60px;
+    gap: 16px;
+    width: 50%;
+    border-left: 2px dashed var(--black15-color);
+    border-right: 2px dashed var(--black15-color);
+    border-bottom: 2px dashed var(--black15-color);
+}
+#card4 {
+    border-bottom-left-radius: 1rem;
+}
+#card5 {
+    border-bottom-right-radius: 1rem;
+}
+.Af-FAQComponent-cards h3 {
+    margin-bottom: 16px;
+    color: var(--white-color);
+}
+
+.Af-FAQComponent-cards p {
+    color: var(--gray50-color);
+}
+
+.Af-viewAll-btn {
+    display: none;
+}
+
+@media (max-width:1919px) {
+
+    .Af-left-border,
+    .Af-left-right-border {
+        border-bottom: 1.5px dashed var(--black15-color);
+        border-left: 1.5px dashed var(--black15-color);
+    }
+
+    .Af-left-right-border {
+        border-right: 1.5px dashed var(--black15-color);
+    }
+
+    .Af-FAQComponent-cards div,
+    .Af-FAQComponent-cards div {
+        padding: 50px;
+        gap: 12px;
+    }
+
+    .Af-FAQComponent-title {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-right: 250px;
+        padding-left: 60px;
+    }
+
+    .Af-FAQComponent-title h2 {
+        margin-bottom: 24px;
+    }
+
+    .Af-FAQComponent-title p {
+        margin-bottom: 40px;
+    }
+
+    .Af-FAQComponent-btns {
+        gap: 10px;
+    }
+
+    .Af-FAQ-btn {
+        padding: 14px 20px;
+        gap: 10px;
+        height: 49px;
+    }
+
+    .Af-FAQComponent-cards h3 {
+        margin-bottom: 12px;
+    }
+}
+
+/* @media (max-width:1439px) { */
+    /* .Af-FAQComponent-cards h3 {
+        font-size: 16px;
+    } */
+
+    /* .Af-FAQComponent-cards p {
+        font-size: 14px;
+    } */
+/* } */
+
+@media (max-width:992px) {
+    .Af-FAQComponent-title {
+        background: none;
+        padding: 30px 20px;
+    }
+    .Af-FAQComponent-title h2{
+        margin-bottom: 20px;
+    }
+    .Af-FAQComponent-title p{
+        margin-bottom: 30px;
+    }
+
+    .Af-left-border{
+        border-right: 1.5px dashed var(--black15-color);
+    }
+    .Af-left-right-border {
+        display: none;
+    }
+
+    .Af-FAQComponent-cards div,
+    .Af-FAQComponent-cards div {
+        padding: 30px;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .Af-viewAll-btn {
+        display: block;
+        width: 100%;
+        background: inherit;
+        color: var(--gray70-color);
+        border: 0;
+        outline: 0;
+        padding: 30px 20px;
+        border-left: 1.5px dashed var(--black15-color);
+        border-right: 1.5px dashed var(--black15-color);
+        border-bottom: 1.5px dashed var(--black15-color);
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    #card4 {
+        border-bottom-left-radius: 0;
+    }
+    #card5 {
+        border-bottom-right-radius: 0;
+    }
+}
