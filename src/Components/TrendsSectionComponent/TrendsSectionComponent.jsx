@@ -3,6 +3,7 @@ import './TrendsSectionComponent.css'
 import {StoredTrendsData} from "../../Data/TrendsData";
 import TrendsCardComponent from "../TrendsCardComponent/TrendsCardComponent";
 import { useEffect, useState } from 'react';
+import TitleComponent from '../TitleComponent/TitleComponent';
 
 export default function TrendsSectionComponent() {
 
@@ -33,6 +34,9 @@ export default function TrendsSectionComponent() {
   return (
     <section className='p-162'>
       <div className='border2 rounded-12'>
+      <TitleComponent 
+        title={"Crafting Trends, Inspiring Confidence"} 
+        desc={"Explore a world of fashion at StyleLoom, where trends meet affordability."}/>
         <div className='AA-trends-cards'>
               {StoredTrendsData.slice(0, -3).map((e, index) => {
                   return (

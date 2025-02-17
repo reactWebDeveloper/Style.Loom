@@ -3,13 +3,14 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 0;
 }
 
 .AA-view-all-btn{
     width: 100%;
     border: 0;
     background-color: transparent;
-    border-top: 1px dashed var(--black15-color);
+    border-top: 2px dashed var(--black15-color);
     display: none;
 }
 

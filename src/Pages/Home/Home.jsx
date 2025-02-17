@@ -1,19 +1,18 @@
 import React from 'react'
-import '../../Components/HeroComponent/HeroComponent'
-import '../../Components/FAQComponent/FAQComponent'
-import '../../Components/StepsComponent/StepsComponent'
-import '../../Components/ProductComponent/ProductComponent'
-import '../../Components/ProductsSectionComponent/ProductsSectionComponent'
-import '../../Components/TrendsSectionComponent/TrendsSectionComponent'
+import HeroComponent from '../../Components/HeroComponent/HeroComponent'
+import FAQComponent from '../../Components/FAQComponent/FAQComponent'
+import StepsComponent from '../../Components/StepsComponent/StepsComponent'
+import ProductComponent from '../../Components/ProductComponent/ProductComponent'
+import TrendsSectionComponent from '../../Components/TrendsSectionComponent/TrendsSectionComponent'
 
 export default function Home() {
   return (
     <div>
       <HeroComponent/>
-      <StepsComponent />
-      <ProductsSectionComponent/>
-      <FAQComponent />
       <TrendsSectionComponent />
+      <StepsComponent />
+      <ProductComponent/>
+      <FAQComponent />
     </div>
   )
 }
