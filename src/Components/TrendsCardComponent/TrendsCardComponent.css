@@ -1,7 +1,18 @@
 .AA-trends-card{
     position: relative;
-    width: 530px;
     padding: 60px;
+    flex: 1 1 calc(33.33% - 10px);
+    border-right: 1px dashed var(--black15-color);
+    border-bottom: 1px dashed var(--black15-color);
+}
+
+.AA-trends-card:nth-child(3),
+.AA-trends-card:nth-child(6){
+    border-right: 0;
+}
+
+.AA-trends-card:nth-last-child(-n+3){
+    border-bottom: 0;
 }
 
 .AA-bg{
@@ -20,23 +31,16 @@
     color: var(--white-color);
     padding-bottom: 16px;
     font-family: var(--main-font);
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
 }
 
 .AA-card-desc{
     color: var(--gray50-color);
     font-family: var(--main-font);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
 }
 
 @media (max-width: 1919px) {
 
     .AA-trends-card{
-        width: 370px;
         padding: 50px;
     }
 
@@ -47,27 +51,46 @@
 
     .AA-icon{
         padding-bottom: 40px;
-        width: 76px;
-        height: 76px;
     }
 
     .AA-card-title{
         padding-bottom: 12px;
-        font-size: 20px;
-        line-height: 24px;
-    }
-    
-    .AA-card-desc{
-        font-size: 16px;
-        line-height: 24px;
     }
 }
 
+@media (max-width: 1200px) {
+    .AA-trends-card{
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    /* .AA-trends-card:nth-child(4){
+        border-bottom: 1px dashed var(--black15-color);
+    } */
+
+    /* .AA-trends-card:nth-child(2),
+    .AA-trends-card:nth-child(4),
+    .AA-trends-card:nth-child(6){
+        border-right: 0;
+    } */
+
+    /* .AA-trends-card:nth-child(1),
+    .AA-trends-card:nth-child(3),
+    .AA-trends-card:nth-child(5){
+        border-right: 1px dashed var(--black15-color);
+    }
+     */
+}
 
 @media (max-width: 768px) {
     .AA-trends-card{
-        width: 100%;
+        flex: 1 1 100%;
         padding: 30px;
+        border-right: 0 !important;
+        border-bottom: 1px dashed var(--black15-color) !important;
+    }
+
+    .AA-trends-card:nth-child(6){
+        border-bottom: 0 !important;
     }
 
     .AA-bg{
@@ -77,18 +100,14 @@
 
     .AA-icon{
         padding-bottom: 40px;
-        width: 76px;
-        height: 76px;
     }
 
     .AA-card-title{
         padding-bottom: 12px;
-        font-size: 20px;
-        line-height: 24px;
     }
     
-    .AA-card-desc{
-        font-size: 16px;
-        line-height: 24px;
+    .text-18{
+        font-size: 1rem !important;
+        line-height: 1.5rem !important;
     }
 }
