@@ -2,11 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jaro:opsz@6..72&family=Lexend:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* Google Font: Roboto Mono */
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jaro:opsz@6..72&family=Lexend:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   --white-color: #fff;
   --black-color: #000;
@@ -61,7 +63,7 @@
 }
 
 .p-80 {
-  padding-inline:4.16669%;
+  padding-inline: 4.16669%;
 }
 
 .p-60 {
@@ -80,7 +82,7 @@
   border-radius: 1.25rem;
 }
 
-.text-48{
+.text-48 {
   font-size: 3rem;
   font-weight: 500;
   line-height: 3.51562rem;
@@ -92,19 +94,24 @@
   line-height: 2.25rem;
 }
 
-.text-18{
+.text-18 {
   /* here 18lg 16md 14sm  */
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.6875rem;
 }
 
-.text-btn-18{
+.text-btn-18 {
   /* here 18lg 14md and 14sm  */
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.6875rem;
 }
+
+
+
+
+
 
 
 @media (max-width: 1919px) {
@@ -113,8 +120,9 @@
   }
 
   .p-162 {
-    padding-inline:5.5559%;
+    padding-inline: 5.5559%;
   }
+
   .p-60 {
     padding-inline: 3.47229%;
   }
@@ -131,25 +139,25 @@
     border-radius: 1rem;
   }
 
-  .text-48{
-  font-size: 2.375rem;
-  line-height: 2.783125rem;
-}
+  .text-48 {
+    font-size: 2.375rem;
+    line-height: 2.783125rem;
+  }
 
-.text-24 {
-  font-size: 1.25rem;
-  line-height: 1.875rem;
-}
+  .text-24 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
 
-.text-18{
+  .text-18 {
     font-size: 1rem;
-  line-height: 1.5rem;
-}
+    line-height: 1.5rem;
+  }
 
-.text-btn-18{
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
-}
+  .text-btn-18 {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
 
 }
 
@@ -165,22 +173,27 @@
   .p-80 {
     padding-inline: 5.1289%;
   }
+
   .p-60 {
-    padding-inline:7.6929%;
+    padding-inline: 7.6929%;
   }
+
   .rounded-20 {
     border-radius: 0.875rem;
   }
-.text-48{
-  font-size: 1.75rem;
-  line-height: 2.05062rem;
-}
-.text-24 {
-  font-size: 1.125rem;
-  line-height: 1.6875rem;
-}
-.text-18{
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
-}
+
+  .text-48 {
+    font-size: 1.75rem;
+    line-height: 2.05062rem;
+  }
+
+  .text-24 {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+
+  .text-18 {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
 }
