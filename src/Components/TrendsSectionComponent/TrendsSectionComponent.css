@@ -1,7 +1,7 @@
 .AA-trends-cards{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 0;
 }
