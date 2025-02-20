@@ -5,7 +5,9 @@ import basket from "./../../assets/imgs/NavBar/Union.png";
 import ToggleIcon from "./../../assets/imgs/NavBar/Icon.png";
 import CloseIcon from "./../../assets/imgs/NavBar/close.svg";
 import { Link } from "react-router-dom";
-
+import test from '../../assets/imgs/Products/Image-7.webp';
+import { GoArrowLeft } from "react-icons/go";
+import { GoX } from "react-icons/go";
 export default function Navbar() {
   // Retrieve the active link from localStorage or set it to "Home" by default
   const [activeLink, setActiveLink] = useState(
@@ -25,6 +27,20 @@ export default function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
+
+
+
+
+
+  const [openPopUp, setopenPopUp] = useState(false);
+  function handlePopUp() {
+    if (openPopUp === true) {
+      setopenPopUp(false);
+    } else {
+      setopenPopUp(true);
+    }
+  }
+
   return (
     <>
       <nav>
@@ -35,9 +51,8 @@ export default function Navbar() {
             <div className="MR-buttonContainer">
               <Link to="/" onClick={() => setActiveLink("/")}>
                 <button
-                  className={`text-btn-18 rounded-12 ${
-                    activeLink === "/" ? "activeLink" : "MR-notActive"
-                  }`}
+                  className={`text-btn-18 rounded-12 ${activeLink === "/" ? "activeLink" : "MR-notActive"
+                    }`}
                 >
                   Home
                 </button>
@@ -45,9 +60,8 @@ export default function Navbar() {
 
               <Link to="/products" onClick={() => setActiveLink("/products")}>
                 <button
-                  className={`text-btn-18 rounded-12 ${
-                    activeLink === "/products" ? "activeLink" : "MR-notActive"
-                  }`}
+                  className={`text-btn-18 rounded-12 ${activeLink === "/products" ? "activeLink" : "MR-notActive"
+                    }`}
                 >
                   Products
                 </button>
@@ -65,14 +79,13 @@ export default function Navbar() {
 
             {/* Right section with basket and contact buttons */}
             <div className="MR-buttonContainer2">
-              <button className="MR-basketButton rounded-12">
+              <button className="MR-basketButton rounded-12" onClick={handlePopUp}>
                 <img src={basket} alt="basket" />
               </button>
               <Link to="/contact" onClick={() => setActiveLink("/contact")}>
                 <button
-                  className={`MR-contactButton text-btn-18 rounded-12 ${
-                    activeLink === "/contact"
-                  }`}
+                  className={`MR-contactButton text-btn-18 rounded-12 ${activeLink === "/contact"
+                    }`}
                 >
                   Contact
                 </button>
@@ -95,7 +108,7 @@ export default function Navbar() {
               />
             </Link>
             <div className="MR-responsiveNavButtonContainer">
-              <button className="MR-basketButton rounded-12">
+              <button className="MR-basketButton rounded-12" onClick={handlePopUp}>
                 <img src={basket} alt="basket" />
               </button>
               <button className="MR-toggleIcon" onClick={toggleMenu}>
@@ -104,6 +117,84 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+
+
+
+        {
+          openPopUp &&
+          <>
+            <div className="Af-popup-container rounded-20">
+              <button className="Af-goBack" onClick={() => setopenPopUp(false)}><GoArrowLeft /></button>
+              <div className="Af-popup-card-father rounded-20" >
+                <div className="Af-popup-card">
+                  <img src={test} alt="" />
+                  <div className="Af-popup-card-desc">
+                    <div className="Af-popup-name">
+                      <h4>Timeless A-line Evening Dress</h4>
+                      <p>$54.99</p>
+                    </div>
+                    <button className="Af-delete-product"><GoX /></button>
+                  </div>
+                </div>
+                <div className="Af-popup-card">
+                  <img src={test} alt="" />
+                  <div className="Af-popup-card-desc">
+                    <div className="Af-popup-name">
+                      <h4>Timeless A-line Evening Dress</h4>
+                      <p>$54.99</p>
+                    </div>
+                    <button className="Af-delete-product"><GoX /></button>
+                  </div>
+                </div>
+                <div className="Af-popup-card">
+                  <img src={test} alt="" />
+                  <div className="Af-popup-card-desc">
+                    <div className="Af-popup-name">
+                      <h4>Timeless A-line Evening Dress</h4>
+                      <p>$54.99</p>
+                    </div>
+                    <button className="Af-delete-product"><GoX /></button>
+                  </div>
+                </div>
+                <div className="Af-popup-card">
+                  <img src={test} alt="" />
+                  <div className="Af-popup-card-desc">
+                    <div className="Af-popup-name">
+                      <h4>Timeless A-line Evening Dress</h4>
+                      <p>$54.99</p>
+                    </div>
+                    <button className="Af-delete-product"><GoX /></button>
+                  </div>
+                </div>
+                <div className="Af-popup-card">
+                  <img src={test} alt="" />
+                  <div className="Af-popup-card-desc">
+                    <div className="Af-popup-name">
+                      <h4>Timeless A-line Evening Dress</h4>
+                      <p>$54.99</p>
+                    </div>
+                    <button className="Af-delete-product"><GoX /></button>
+                  </div>
+                </div>
+                <div className="Af-popup-card">
+                  <img src={test} alt="" />
+                  <div className="Af-popup-card-desc">
+                    <div className="Af-popup-name">
+                      <h4>Timeless A-line Evening Dress</h4>
+                      <p>$54.99</p>
+                    </div>
+                    <button className="Af-delete-product"><GoX /></button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            {/* <button  onClick={()=> setopenPopUp(false)}>x</button> */}
+          </>
+
+        }
+
       </nav>
     </>
   );

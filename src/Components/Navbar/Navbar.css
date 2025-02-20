@@ -1,3 +1,76 @@
+.Af-popup-container{
+    width: 30%;
+    padding:30px;
+    background-color: var(--brown60-color);
+
+    display: block;
+    position: absolute;
+    /* top: 0; */
+    right: 0;
+    
+}
+.Af-popup-card-father{
+    border: 2px dashed var(--black20-color);
+    overflow-y: auto; 
+    height: 400px;
+    
+}
+.Af-popup-card-father::-webkit-scrollbar{
+    /* display: none; */
+    /* width: 2px; */
+    /* height: 20px; */
+    /* color: var(--black10-color); */
+}
+.Af-popup-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom:  2px dashed var(--black20-color);
+}
+.Af-popup-card-father:last-child{
+    border-bottom: 0;
+}
+.Af-popup-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+}
+.Af-popup-card-desc{
+    display: flex;
+    text-align: right;
+    
+}
+.Af-goBack{
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.Af-delete-product{
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: red;
+}
+.Af-popup-name{
+    padding: 0 10px;
+}
+.Af-popup-name h4{
+    font-size: 16px;
+}
+
+
+
+
+
 /* Navbar styling */
 nav {
     background-color: var(--black06-color);

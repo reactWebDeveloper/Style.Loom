@@ -1,7 +1,8 @@
 import { useState, useRef } from 'react';
 import './FAQComponent.css'
 import { exportedFAQCardData } from '../../Data/FAQComponentData/FAQComponentData';
-
+import AfBackImg from '../../assets/imgs/Vector.png'
+import TitleComponent from '../TitleComponent/TitleComponent';
 export default function FAQComponent() {
     const btns = [
         {
@@ -32,22 +33,19 @@ export default function FAQComponent() {
         setActiveBtn(filter);
     }
 
-    const hideSideRefs = useRef([]);
+    const [isHide, setisHide] = useState(true);
 
-    const changeDisplay = (index) => {
-        if (hideSideRefs.current[index]) {
-            if (hideSideRefs.current[index].style.display === 'block') {
-                hideSideRefs.current[index].style.display = 'none';
-            } else {
-                hideSideRefs.current[index].style.display = 'block';
-            }
-        }
-    };
+    const hideSideRefs = useRef([]);
 
     const toggleAll = () => {
         hideSideRefs.current.forEach(ref => {
             if (ref) {
                 ref.style.display = ref.style.display === 'block' ? 'none' : 'block';
+            }
+            if(ref.style.display==='block'){
+                setisHide(false);
+            }else{
+                setisHide(true);
             }
         });
     };
@@ -60,6 +58,12 @@ export default function FAQComponent() {
                         Have Questions? We Have Answers.
                     </h2>
                     <p className='text-18'>Ease into the world of StyleLoom with clarity. Our FAQs cover a spectrum of topics.</p>
+                    
+                    {/* <TitleComponent
+                    title={" Have Questions? We Have Answers."}
+                    desc={"Ease into the world of StyleLoom with clarity. Our FAQs cover a spectrum of topics."}
+                    img={AfBackImg}
+                    /> */}
                     <div className='Af-FAQComponent-btns'>
                         {btns.map((btn, index) => {
                             return (
@@ -81,10 +85,10 @@ export default function FAQComponent() {
                                 const refIndex = Math.floor(index / 2);
                                 if (index % 2 === 0) {
                                     return (
-                                        <div 
-                                        className='Af-left-border' 
-                                        id={`card${index}`}
-                                        key={`left-${index}`}>
+                                        <div
+                                            className='Af-left-border'
+                                            id={`card${index}`}
+                                            key={`left-${index}`}>
                                             <h3 className='text-24'>
                                                 {b.title}
                                             </h3>
@@ -115,7 +119,9 @@ export default function FAQComponent() {
                         return null;
                     })}
                 </div>
-                <button className='Af-viewAll-btn' onClick={toggleAll}> View All</button>
+                <button className='Af-viewAll-btn' onClick={toggleAll}>
+                    {isHide? "View All": "Hide"}
+                    </button>
             </div>
         </div>
     )
