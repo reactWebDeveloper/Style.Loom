@@ -1,0 +1,27 @@
+.AA-trends-cards{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.AA-view-all-btn{
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    border-top: 2px dashed var(--black15-color);
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .AA-view-all-btn{
+        display: block;
+        color: var(--white-color);
+        padding: 30px 0;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+    }
+}

@@ -1,16 +1,18 @@
 import React from 'react'
-import FAQComponent from '../../Components/FAQComponent/FAQComponent'
-import ProductsSectionComponent from '../../Components/ProductsSectionComponent/ProductsSectionComponent'
-import StepsComponent from '../../components/StepsComponent/StepsComponent'
 import HeroComponent from '../../Components/HeroComponent/HeroComponent'
 import AdComponent from '../../Components/AdComponent/AdComponent'
+import FAQComponent from '../../Components/FAQComponent/FAQComponent'
+import StepsComponent from '../../Components/StepsComponent/StepsComponent'
+import ProductComponent from '../../Components/ProductComponent/ProductComponent'
+import TrendsSectionComponent from '../../Components/TrendsSectionComponent/TrendsSectionComponent'
 
 export default function Home() {
   return (
     <div>
       <HeroComponent/>
+      <TrendsSectionComponent />
       <StepsComponent />
-      <ProductsSectionComponent/>
+      <ProductComponent/>
       <FAQComponent />
       <AdComponent />
     </div>
