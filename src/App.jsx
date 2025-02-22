@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact/Contact";
 import Cart from "./Pages/Cart/Cart";
 import Navbar from "./Components/Navbar/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import FooterComponent from './Components/FooterComponent/FooterComponent'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+      <FooterComponent />
     </div>
   );
 }

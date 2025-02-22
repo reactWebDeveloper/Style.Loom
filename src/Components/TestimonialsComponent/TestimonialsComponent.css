@@ -1,0 +1,23 @@
+.testimonialsComponent {
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.testimonialsComponent .swiper-wrapper {
+  display: flex;
+}
+
+
+/* figma design */
+@media (max-width:1919px) {
+  .testimonialsComponent {
+    padding: 40px 0;
+  }
+}
+
+/* figma design */
+@media (max-width:540px) {
+  .testimonialsComponent {
+    padding: 30px 0;
+  }
+}
