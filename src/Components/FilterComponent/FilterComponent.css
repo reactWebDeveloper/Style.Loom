@@ -1,0 +1,309 @@
+.AA-filter-comp{
+    padding-top: 50px;
+    border-right: 2px dashed var(--black15-color);
+    padding-right: 20px;
+    font-family: var(--main-font);
+
+}
+
+.AA-inputs{
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--main-font);
+  width: 100%;
+  background-color: var(--white-color);
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.search-input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  font-family: var(--main-font);
+
+  font-size: 16px;
+}
+
+.search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: var(--main-font);
+
+}
+
+.search-button svg {
+  width: 20px;
+  height: 20px;
+  color: #333;
+}
+
+.AA-filter-title{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: var(--main-font);
+    padding-bottom: 20px;
+
+}
+.AA-filter-title h3{
+    padding-bottom: 0 !important;
+    font-family: var(--main-font);
+
+}
+
+.AA-divider{
+    padding-bottom: 20px;
+}
+
+.AA-filter-comp h3{
+    color: var(--white-color);
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: var(--main-font);
+}
+
+
+  .color-picker {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .color-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .color-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .color-btn.red { background-color: #ff0000; }
+  .color-btn.orange { background-color: #ffa500; }
+  .color-btn.yellow { background-color: #ffff00; }
+  .color-btn.green { background-color: #008000; }
+  .color-btn.blue { background-color: #0000ff; }
+  .color-btn.purple { background-color: #800080; }
+  .color-btn.pink { background-color: #ffc0cb; }
+  .color-btn.brown { background-color: #8b4513; }
+  .color-btn.gray { background-color: #808080; }
+  .color-btn.black { background-color: #000000; }
+  .color-btn.white { background-color: #ffffff; }
+  
+  .color-btn.active {
+    border: 2px solid #0000ff;
+    font-family: var(--main-font);
+
+  }
+
+  .size-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-family: var(--main-font);
+
+  }
+  
+  .size-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-family: var(--main-font);
+
+  }
+  
+  .size-btn:hover {
+    background-color: #d0d0d0;
+    font-family: var(--main-font);
+
+  }
+  
+  .size-btn.active {
+    background-color: #a0c4ff;
+    color: white;
+    font-family: var(--main-font);
+
+  }
+
+
+
+  
+  .price-inputs {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    width: 100%;
+    font-family: var(--main-font);
+
+  }
+  
+  .price-inputs input {
+    outline: 0;
+    width: 80px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-family: var(--main-font);
+
+  }
+  
+  .price-inputs span {
+    margin: 0 16px;
+    font-family: var(--main-font);
+
+  }
+  
+  .slider-container {
+    position: relative;
+    margin-bottom: 16px;
+    font-family: var(--main-font);
+
+  }
+  
+  #min-range, #max-range {
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    outline: none;
+    border-radius: 4px;
+    appearance: none;
+    font-family: var(--main-font);
+
+  }
+  
+  #min-range::-webkit-slider-thumb,
+  #max-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #4a90e2;
+    cursor: pointer;
+    border-radius: 50%;
+    font-family: var(--main-font);
+
+  }
+  
+  #min-range::-moz-range-thumb,
+  #max-range::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #4a90e2;
+    cursor: pointer;
+    border-radius: 50%;
+    font-family: var(--main-font);
+
+  }
+  
+  .price-labels {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #666;
+    width: 100%;
+    font-family: var(--main-font);
+
+  }
+
+
+  .accordion-button:not(.collapsed) {
+    background-color: var(--brown60-color) !important;
+    color: var(--white-color) !important;
+    box-shadow: inset 0 0 transparent !important;
+    border-radius: 25px !important;
+    font-family: var(--main-font);
+
+  }
+
+  .accordion-button{
+    background-color: var(--brown60-color) !important;
+    font-family: var(--main-font);
+    color: var(--white-color) !important;
+  }
+
+  .accordion-button:focus {
+    box-shadow: inset 0 0 transparent !important;
+    font-family: var(--main-font);
+
+  }
+
+  .accordion-collapse{
+    background-color: var(--black06-color) !important;
+    font-family: var(--main-font);
+
+  }
+
+  .accordion-item{
+    border-color: var(--black06-color) !important;
+    background-color: transparent !important;
+    font-family: var(--main-font);
+
+  }
+
+  .accordion-flush>.accordion-item {
+    border-radius: 25px !important;
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+
+}
+
+.accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
+  border-radius: 5px !important;
+  box-shadow: inset 0 0 transparent !important;
+  font-family: var(--main-font);
+
+}
+
+
+.options-container {
+  margin-top: 10px;
+  height: 250px;
+  overflow-y: auto;
+  font-family: var(--main-font);
+
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: var(--main-font);
+
+}
+
+.option-row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  accent-color: var(--brown60-color) !important; /* Change checkbox color */
+  font-family: var(--main-font);
+
+}
+
+.option-row label {
+  font-size: 16px;
+  color: #333;
+  font-family: var(--main-font);
+}

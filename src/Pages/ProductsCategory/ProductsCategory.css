@@ -1,0 +1,49 @@
+.AA-row{
+  display: flex;
+}
+
+.filter-sidebar {
+  width: 100%;
+}
+
+.toggle-button {
+  background-color: #f8b6c5; /* Light pink */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #e794a7; /* Slightly darker pink on hover */
+}
+
+.filter-list {
+  transition: max-height 0.3s ease;
+  width: 30%;
+}
+
+.filter-list.hidden {
+  display: none;
+}
+
+
+
+.filter-list.list{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  width: 60% !important;
+  padding-top: 20px;
+  padding-left: 20px;
+
+  background-color: var(--black06-color);
+  overflow-y: auto;
+  height: 100vh;
+}
+
+
+
