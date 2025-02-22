@@ -1,5 +1,6 @@
 .testimonialsComponent {
   padding: 50px 0;
+  overflow: hidden;
 }
 
 .testimonialsComponent .swiper-wrapper {

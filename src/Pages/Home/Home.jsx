@@ -3,8 +3,8 @@ import HeroComponent from '../../Components/HeroComponent/HeroComponent'
 import AdComponent from '../../Components/AdComponent/AdComponent'
 import FAQComponent from '../../Components/FAQComponent/FAQComponent'
 import StepsComponent from '../../Components/StepsComponent/StepsComponent'
-import ProductComponent from '../../Components/ProductComponent/ProductComponent'
 import TrendsSectionComponent from '../../Components/TrendsSectionComponent/TrendsSectionComponent'
+import ProductsSectionComponent from '../../Components/ProductsSectionComponent/ProductsSectionComponent'
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <HeroComponent/>
       <TrendsSectionComponent />
       <StepsComponent />
-      <ProductComponent/>
+      <ProductsSectionComponent/>
       <FAQComponent />
       <AdComponent />
     </div>
