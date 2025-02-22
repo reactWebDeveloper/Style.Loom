@@ -1,0 +1,13 @@
+.ContactInfoComponent {
+  padding-top: 100px;
+}
+
+.ContactInfoComponent .ContactInfoTitle {
+  padding: 50px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35.16px;
+}

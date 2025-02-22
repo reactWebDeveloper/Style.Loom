@@ -1,0 +1,131 @@
+.titleComponent{
+    color: var(--white-color);
+    padding-right: 0;
+    max-width: 100%;
+    padding-top: 80px;
+    position: relative;
+}
+.titleComponent div:first-child{
+    max-width: 79.603%;
+    padding-bottom: 80px;
+}
+.titleComponent div h2{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 56.25px;
+    font-family: var(--main-font);
+    margin-bottom: 30px;
+}
+.titleComponent div p{
+    width: 100%;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: var(--main-font);
+    color: var(--gray40-color);
+}
+.titleStarIcon{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.overflowHidden{
+    overflow: hidden;
+}
+
+@media (max-width:1440px){
+    .titleComponent{
+        padding-top: 60px;
+        padding-left: 60px;
+    }
+    .titleComponent div:first-child{
+        max-width: 85.463%;
+        padding-bottom: 60px;    
+    }
+    .titleComponent div h2{
+        font-size: 38px;
+        line-height: 44.53px;
+        margin-bottom: 24px;
+    }
+    .titleComponent div p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .titleStarIcon{
+        top: -55px;
+        right: -49px;
+        width: 280px;
+        height: 280px;
+    }
+}
+@media (max-width:1200px){
+    .titleComponent{
+        padding-top: 50px;
+        padding-left: 50px;
+    }
+    .titleComponent div:first-child{
+        max-width: 82.463%;
+        padding-bottom: 50px;    
+    }
+    .titleComponent div h2{
+        font-size: 35px;
+        line-height: 41.53px;
+        margin-bottom: 22px;
+    }
+    .titleComponent div p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .titleStarIcon{
+        top: -55px;
+        right: -49px;
+        width: 240px;
+        height: 240px;
+    }
+}
+@media (max-width:992px){
+    .titleComponent{
+        padding-top: 40px;
+        padding-left: 40px;
+    }
+    .titleComponent div:first-child{
+        max-width: 78%;
+        padding-bottom: 40px;    
+    }
+    .titleComponent div h2{
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
+    .titleComponent div p{
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .titleStarIcon{
+        top: -55px;
+        right: -49px;
+        width: 220px;
+        height: 220px;
+    }
+}
+@media (max-width:390px){
+    .titleComponent{
+        padding: 30px 20px;
+    }
+    .titleComponent div:first-child{
+        max-width:100%;
+        padding-bottom: 0px;    
+    }
+    .titleComponent div h2{
+        font-size: 28px;
+        line-height: 32.81px;
+    }
+    .titleComponent div p{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .titleStarIcon{
+        display: none;
+    }
+}
