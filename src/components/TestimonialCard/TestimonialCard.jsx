@@ -1,10 +1,15 @@
-import icon from "./../../assets/imgs/Icons/icon-7.svg";
-import star from "./../../assets/imgs/Icons/Shape-3.png";
 import Design from "./../../assets/imgs/Testimonials/Design.png";
-import './TestimonialCard.css'
+import "./TestimonialCard.css";
+import { FaStar } from "react-icons/fa6";
+import { RiTwitterFill } from "react-icons/ri";
 
-
-export default function TestimonialCard({ person, personName, personCity, description ,border }) {
+export default function TestimonialCard({
+  person,
+  personName,
+  personCity,
+  description,
+  border,
+}) {
   return (
     <section className={` ${border} testimonialCard`}>
       <div className="forPerson">
@@ -17,17 +22,17 @@ export default function TestimonialCard({ person, personName, personCity, descri
         </div>
 
         {/* how i can make it svg ? */}
-        <img src={icon} className="icon" />
+        <RiTwitterFill className="icon" />
       </div>
       <div className="forStars">
-        <img src={star} className="starIcon" />
-        <img src={star} className="starIcon" />
-        <img src={star} className="starIcon" />
-        <img src={star} className="starIcon" />
-        <img src={star} className="starIcon" />
+        <FaStar className="star" />
+        <FaStar className="star" />
+        <FaStar className="star" />
+        <FaStar className="star" />
+        <FaStar className="star" />
       </div>
       <p className="text-18">{description}</p>
-      <img src={Design} className="designe"/>
+      <img src={Design} className="designe" />
     </section>
   );
 }
