@@ -6,7 +6,7 @@ import StepsComponent from '../../components/StepsComponent/StepsComponent'
 export default function Home() {
   return (
     <div>
-      <StepsComponent />
+      {/* <StepsComponent /> */}
       <ProductsSectionComponent/>
       <FAQComponent />
       
