@@ -1,0 +1,94 @@
+.TestimonialSection{
+    /* background-color: rgb(241, 200, 200); */
+    margin-top: 100px;
+}
+.forcard{
+    flex-wrap: wrap;
+    border: 2px dashed var(--black15-color);
+    border-top: none;
+         border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+    
+}
+.forTitle{
+     border: 2px dashed var(--black15-color);
+     border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+overflow-x: hidden;
+
+
+}
+.TestimonialSection .toview ,.TestimonialSection .tohide{
+    display: none;
+}
+.nothidden , .hidden{
+    width: 33.333333%;
+}
+@media screen and (max-width:1919px){
+
+    .TestimonialSection{
+    margin-top: 80px;
+}
+.forcard{
+
+border: 1.5px dashed var(--black15-color);
+
+border-bottom-left-radius: 16px;
+border-bottom-right-radius: 16px;
+    
+}
+.forTitle{
+     border: 1.5px dashed var(--black15-color);
+     border-top-left-radius: 16px;
+border-top-right-radius: 16px;
+
+
+}
+}
+@media screen and (max-width:1200px){
+.nothidden,.hidden{
+    width: 50%;
+}
+}
+@media screen and (max-width:768px){
+    .nothidden ,.hidden{
+    width: 100%;
+}
+.hidden{
+display: none;
+}
+.show {
+  display: block;
+}
+    .TestimonialSection{
+    margin-top: 50px;
+}
+.TestimonialSection .toview  {
+    display: block;
+    border: none;
+    border-top: 1px dashed var(--black20-color);
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--gray70-color);
+    height: 84px;
+}
+.TestimonialSection .tohide  {
+    display: block;
+    border: none;
+    border-top: 1px dashed var(--black20-color);
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--gray70-color);
+    height: 84px;
+}
+.TestimonialSection .toview img{
+margin-left: 14.38px;
+width: 20px;
+height: 20px;
+}
+
+}
