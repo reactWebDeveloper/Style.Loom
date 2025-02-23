@@ -1,4 +1,4 @@
-import icon from "./../../assets/imgs/Icons/Capa 2.svg";
+import icon from "./../../assets/imgs/Icons/icon-7.svg";
 import star from "./../../assets/imgs/Icons/Shape-3.png";
 import Design from "./../../assets/imgs/Testimonials/Design.png";
 import './TestimonialCard.css'

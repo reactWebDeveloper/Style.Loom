@@ -11,6 +11,7 @@ import arrow from "./../../assets/imgs/Icons/arrow.png";
 import deecor from "./../../assets/imgs/Testimonials/Abstract Design.png";
 import TitleComponent from "../TitleComponent/TitleComponent";
 
+
 export default function TestimonialSection() {
   const [isExpanded, setIsExpanded] = useState(false);
 

@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 import React from 'react'
 import HeroComponent from '../../Components/HeroComponent/HeroComponent'
 import AdComponent from '../../Components/AdComponent/AdComponent'
@@ -19,6 +18,5 @@ export default function Home() {
       <FAQComponent />
       <AdComponent />
     </div>
-
   )
 }
