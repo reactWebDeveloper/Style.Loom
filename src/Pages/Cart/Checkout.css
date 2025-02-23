@@ -1,12 +1,14 @@
 
 .Af-checkOut-Payment {
-    width: 500px;
-    padding: 40px; 
+    width: 26.04%;
+    padding: 40px;
     border-radius: 8px;
     background-color:var(--brown60-color);
-    position: absolute;
-    top: 130px;
+    position: fixed;
+    top: 12%;
     right: 0;
+    z-index: 999;
+    
 }
 
 label {
@@ -32,8 +34,10 @@ input[type="text"] {
 }
 
 .Af-payment-options {
+    width: 100%;
     display: flex; 
     justify-content: space-between; 
+    gap: 3%;
     margin-bottom: 15px;
 }
 
@@ -43,6 +47,10 @@ input[type="text"] {
     border-radius: 4px;
     cursor: pointer; 
     padding: 10px; 
+    width: 24%;
+}
+.Af-payment-options button img{
+    width: 100%;
 }
 
 .Af-card-input {
@@ -91,3 +99,33 @@ input[type="text"] {
     font-size: 24px;
 }
 
+@media (max-width:1439px){
+    .Af-checkOut-Payment{
+        width: 34.72%;
+    }
+}
+@media (max-width:1200px){
+    .Af-checkOut-Payment{
+        width: 41.66%;
+    }
+}
+@media (max-width:992px){
+    .Af-checkOut-Payment{
+        width: 50%;
+    }
+}
+@media (max-width:768px){
+    .Af-checkOut-Payment{
+        width: 70%;
+    }
+}
+@media (max-width:540px){
+    .Af-checkOut-Payment{
+        width: 70%;
+    }
+}
+@media (max-width:389px){
+    .Af-checkOut-Payment{
+        width: 100%;
+    }
+}

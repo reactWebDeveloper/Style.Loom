@@ -1,39 +1,46 @@
-.Af-popup-container{
+.Af-cart-container {
     width: 100%;
-    background-color: var( --black06-color);
+    background-color: var(--black06-color);
     padding-top: 160px;
     padding-bottom: 100px;
+
 }
 
-.Af-popup-card-father{
+.Af-cart-card-father {
     border: 2px dashed var(--black20-color);
     width: 100%;
-
+    position: relative;
 }
-.Af-popup-card{
+
+.Af-cart-card {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 40px 60px ;
+    padding: 40px 60px;
     border-bottom: 2px dashed var(--black20-color);
 }
-.Af-popup-card-img-desc{
+
+.Af-cart-card-img-desc {
     width: 90%;
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.Af-popup-card-img-desc img{
+
+.Af-cart-card-img-desc img {
     width: 30.06%;
     border-radius: 10%;
 }
-.Af-popup-card-desc h4{
+
+.Af-cart-card-desc h4 {
     color: var(--white-color);
 }
-.Af-popup-card-desc p{
+
+.Af-cart-card-desc p {
     color: var(--gray50-color);
 }
-.Af-delete-product{
+
+.Af-delete-product {
     border: 0;
     outline: 0;
     background-color: inherit;
@@ -41,36 +48,39 @@
     font-size: 58px;
     color: red;
 }
-.Af-product-count{
+
+.Af-product-count {
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--white-color);
 }
 
-.Af-product-count button{
+.Af-product-count button {
     border: 1px solid var(--black20-color);
     width: 30px;
     height: 30px;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     border-radius: 50%;
     outline: 0;
     background-color: inherit;
     color: var(--white-color);
 }
-.Af-Payment-Section{
+
+.Af-Payment-Section {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     padding: 20px;
 }
-.Af-Payment-Section h3{
-color: var(--white-color);
+
+.Af-Payment-Section h3 {
+    color: var(--white-color);
 }
-.Af-Payment-Section button{
+
+.Af-Payment-Section button {
     background-color: var(--brown60-color);
     border: none;
     padding: 18px 30px;
@@ -79,122 +89,44 @@ color: var(--white-color);
 }
 
 
+@media(max-width:992px) {
+    .Af-cart-card {
+        padding: 30px 30px 20px;
+    }
 
-/* 
-.Af-checkOut-Payment {
-    width: 500px;
-    padding: 40px; 
-    border-radius: 8px;
-    background-color:var(--brown60-color);
-    position: absolute;
-    top: 130px;
-    right: 0;
+    .Af-delete-product {
+        font-size: 48px;
+    }
+
+    .Af-cart-card-desc h4 {
+        font-size: 24px;
+    }
 }
 
-label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px; 
-    background-color: var(--brown70-color);
-    border-radius: 4px;
-    font-size: 16px;
-    outline: 0;
-    border: 0;
-    color: var(--black25-color);
-}
-
-.Af-payment-container {
-    margin-top: 20px; 
-}
-
-.Af-payment-options {
-    display: flex; 
-    justify-content: space-between; 
-    margin-bottom: 15px;
-}
-
-.Af-payment-options button {
-    background-color: #f0f0f0; 
-    border: none; 
-    border-radius: 4px;
-    cursor: pointer; 
-    padding: 10px; 
-}
-
-.Af-card-input {
-    display: flex; 
-    align-items: center; 
-    position: relative;
-
-}
-
-.Af-payment-logo {
-    margin-left: 10px;
-    width: 30px; 
-    position: absolute;
-    right: 8px;
-    top: 8px;
-}
-.Af-cvv-expiry-container {
-    display: flex; 
-    justify-content: space-between;
-    margin-top: 15px;
-}
-
-.Af-cvv-expiry-container input {
-    width: 48%; 
-    padding: 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-}
-
-.Af-save-button {
-    margin-top: 20px; 
-    padding: 10px; 
-    background-color: var(--black20-color);
-    border: 1px solid var(--black20-color); 
-    color: white;
-
-    border-radius: 4px;
-    cursor: pointer; 
-}
-
-.Af-GoArrowLeft{
-    display: block;
-    border: 0;
-    outline: 0;
-    background-color: inherit;
-    font-size: 24px;
-}
- */
-
-
-
-
-
-
-
-
-
-@media(max-width:992px){
-    .Af-popup-card,.Af-popup-card-img-desc{
+@media(max-width:768px) {
+    .Af-cart-card-desc h4 {
+        font-size: 20px;
+        line-height: 1.2rem;
+    }
+    .Af-cart-card-img-desc{
+        align-items: flex-start;
+    }
+    .Af-Payment-Section{
         flex-direction: column;
-        justify-content: center;
+        gap: 20px;
+    }
+}
+@media (max-width:540px){
+    .Af-cart-card-img-desc,.Af-cart-card{
+        flex-direction: column;
         margin: 0 auto;
     }
-    .Af-popup-card{
-        padding:30px 30px 20px;
-    }
-    .Af-popup-card-img-desc img{
+
+    .Af-cart-card-img-desc img{
         width: 100%;
     }
-    .Af-delete-product{
-        font-size: 48px;
+    .Af-cart-card-desc h4 {
+        font-size: 30px;
+        line-height: 1.9rem;
     }
 }

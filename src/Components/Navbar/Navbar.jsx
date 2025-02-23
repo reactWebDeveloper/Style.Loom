@@ -5,9 +5,6 @@ import basket from "./../../assets/imgs/NavBar/Union.png";
 import ToggleIcon from "./../../assets/imgs/NavBar/Icon.png";
 import CloseIcon from "./../../assets/imgs/NavBar/close.svg";
 import { Link } from "react-router-dom";
-import test from '../../assets/imgs/Products/Image-7.webp';
-import { GoArrowLeft } from "react-icons/go";
-import { GoX } from "react-icons/go";
 export default function Navbar() {
   // Retrieve the active link from localStorage or set it to "Home" by default
   const [activeLink, setActiveLink] = useState(
@@ -26,20 +23,6 @@ export default function Navbar() {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-
-
-
-
-
-
-  // const [openPopUp, setopenPopUp] = useState(false);
-  // function handlePopUp() {
-  //   if (openPopUp === true) {
-  //     setopenPopUp(false);
-  //   } else {
-  //     setopenPopUp(true);
-  //   }
-  // }
 
   return (
     <>
