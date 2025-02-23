@@ -86,18 +86,34 @@ display: none;
 .testimonialCard .forPerson .icon {
     width: 34px;
     height: 34px;
+    color: var(--brown70-color);
+}
+.testimonialCard .forPerson .icon:hover {
+color: #1DA1F2;
 }
 
 .testimonialCard .forStars {
   margin: 40px 0;
 }
 
-.testimonialCard .forStars img{
+.testimonialCard .forStars .star{
 margin-right: 5px;
 height:24px ;
 width:24px ;
-
+color: #FFCE22;
 }
+.testimonialCard .forStars .star:hover{
+margin-right: 5px;
+height:24px ;
+width:24px ;
+color: #fbcf32cd;
+}
+
+
+
+
+
+
 
 .testimonialCard p {
   color: var(--gray50-color);
@@ -219,7 +235,7 @@ display: none;
   margin: 30px 0;
 }
 
-.testimonialCard .forStars img{
+.testimonialCard .forStars .star{
 margin-right: 4px;
 width: 15px;
 height: 15px;
@@ -266,7 +282,7 @@ height: 15px;
 .testimonialCard .forStars {
   margin: 24px 0;
 }
-.testimonialCard .forStars img {
+.testimonialCard .forStars .star {
   width: 20px;
   height: 20px;
 }
