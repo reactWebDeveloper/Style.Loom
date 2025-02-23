@@ -1,0 +1,93 @@
+
+.Af-checkOut-Payment {
+    width: 500px;
+    padding: 40px; 
+    border-radius: 8px;
+    background-color:var(--brown60-color);
+    position: absolute;
+    top: 130px;
+    right: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; 
+    background-color: var(--brown70-color);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    color: var(--black25-color);
+}
+
+.Af-payment-container {
+    margin-top: 20px; 
+}
+
+.Af-payment-options {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 15px;
+}
+
+.Af-payment-options button {
+    background-color: #f0f0f0; 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer; 
+    padding: 10px; 
+}
+
+.Af-card-input {
+    display: flex; 
+    align-items: center; 
+    position: relative;
+
+}
+
+.Af-payment-logo {
+    margin-left: 10px;
+    width: 30px; 
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+.Af-cvv-expiry-container {
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.Af-cvv-expiry-container input {
+    width: 48%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.Af-save-button {
+    margin-top: 20px; 
+    padding: 10px; 
+    background-color: var(--black20-color);
+    border: 1px solid var(--black20-color); 
+    color: white;
+
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
+.Af-GoArrowLeft{
+    display: block;
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    font-size: 24px;
+}
+

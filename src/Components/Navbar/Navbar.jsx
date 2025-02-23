@@ -32,14 +32,14 @@ export default function Navbar() {
 
 
 
-  const [openPopUp, setopenPopUp] = useState(false);
-  function handlePopUp() {
-    if (openPopUp === true) {
-      setopenPopUp(false);
-    } else {
-      setopenPopUp(true);
-    }
-  }
+  // const [openPopUp, setopenPopUp] = useState(false);
+  // function handlePopUp() {
+  //   if (openPopUp === true) {
+  //     setopenPopUp(false);
+  //   } else {
+  //     setopenPopUp(true);
+  //   }
+  // }
 
   return (
     <>
@@ -79,9 +79,14 @@ export default function Navbar() {
 
             {/* Right section with basket and contact buttons */}
             <div className="MR-buttonContainer2">
-              <button className="MR-basketButton rounded-12" onClick={handlePopUp}>
+              <Link  to="/cart">
+              <button className="MR-basketButton rounded-12">
                 <img src={basket} alt="basket" />
               </button>
+              </Link>
+              {/* <button className="MR-basketButton rounded-12">
+                <img src={basket} alt="basket" />
+              </button> */}
               <Link to="/contact" onClick={() => setActiveLink("/contact")}>
                 <button
                   className={`MR-contactButton text-btn-18 rounded-12 ${activeLink === "/contact"
@@ -108,93 +113,18 @@ export default function Navbar() {
               />
             </Link>
             <div className="MR-responsiveNavButtonContainer">
-              <button className="MR-basketButton rounded-12" onClick={handlePopUp}>
+              <Link  to="/cart">
+              <button className="MR-basketButton rounded-12">
                 <img src={basket} alt="basket" />
               </button>
+              </Link>
+              
               <button className="MR-toggleIcon" onClick={toggleMenu}>
                 <img src={ToggleIcon} alt="Toggle Icon" />
               </button>
             </div>
           </div>
         </div>
-
-
-
-        {
-          openPopUp &&
-          <>
-            <div className="Af-popup-container rounded-20">
-              <button className="Af-goBack" onClick={() => setopenPopUp(false)}><GoArrowLeft /></button>
-              <div className="Af-popup-card-father rounded-20" >
-                <div className="Af-popup-card">
-                  <img src={test} alt="" />
-                  <div className="Af-popup-card-desc">
-                    <div className="Af-popup-name">
-                      <h4>Timeless A-line Evening Dress</h4>
-                      <p>$54.99</p>
-                    </div>
-                    <button className="Af-delete-product"><GoX /></button>
-                  </div>
-                </div>
-                <div className="Af-popup-card">
-                  <img src={test} alt="" />
-                  <div className="Af-popup-card-desc">
-                    <div className="Af-popup-name">
-                      <h4>Timeless A-line Evening Dress</h4>
-                      <p>$54.99</p>
-                    </div>
-                    <button className="Af-delete-product"><GoX /></button>
-                  </div>
-                </div>
-                <div className="Af-popup-card">
-                  <img src={test} alt="" />
-                  <div className="Af-popup-card-desc">
-                    <div className="Af-popup-name">
-                      <h4>Timeless A-line Evening Dress</h4>
-                      <p>$54.99</p>
-                    </div>
-                    <button className="Af-delete-product"><GoX /></button>
-                  </div>
-                </div>
-                <div className="Af-popup-card">
-                  <img src={test} alt="" />
-                  <div className="Af-popup-card-desc">
-                    <div className="Af-popup-name">
-                      <h4>Timeless A-line Evening Dress</h4>
-                      <p>$54.99</p>
-                    </div>
-                    <button className="Af-delete-product"><GoX /></button>
-                  </div>
-                </div>
-                <div className="Af-popup-card">
-                  <img src={test} alt="" />
-                  <div className="Af-popup-card-desc">
-                    <div className="Af-popup-name">
-                      <h4>Timeless A-line Evening Dress</h4>
-                      <p>$54.99</p>
-                    </div>
-                    <button className="Af-delete-product"><GoX /></button>
-                  </div>
-                </div>
-                <div className="Af-popup-card">
-                  <img src={test} alt="" />
-                  <div className="Af-popup-card-desc">
-                    <div className="Af-popup-name">
-                      <h4>Timeless A-line Evening Dress</h4>
-                      <p>$54.99</p>
-                    </div>
-                    <button className="Af-delete-product"><GoX /></button>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            {/* <button  onClick={()=> setopenPopUp(false)}>x</button> */}
-          </>
-
-        }
-
       </nav>
     </>
   );

@@ -1,4 +1,4 @@
-.Af-popup-container{
+/* .Af-popup-container{
     width: 30%;
     padding:30px;
     background-color: var(--brown60-color);
@@ -6,7 +6,7 @@
     display: block;
     position: absolute;
     /* top: 0; */
-    right: 0;
+    /* right: 0;
     
 }
 .Af-popup-card-father{
@@ -14,14 +14,14 @@
     overflow-y: auto; 
     height: 400px;
     
-}
+} */
 .Af-popup-card-father::-webkit-scrollbar{
     /* display: none; */
     /* width: 2px; */
     /* height: 20px; */
     /* color: var(--black10-color); */
 }
-.Af-popup-card{
+/* .Af-popup-card{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,8 +51,8 @@
     background-color: inherit;
     margin-bottom: 10px;
     font-size: 30px;
-}
-.Af-delete-product{
+} */
+/* .Af-delete-product{
     border: 0;
     outline: 0;
     background-color: inherit;
@@ -65,7 +65,7 @@
 }
 .Af-popup-name h4{
     font-size: 16px;
-}
+} */
 
 
 
