@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../ProductsSectionComponent/ProductsSectionComponent.css'
 import './ProductsPageComponent.css'
+import { productsData } from '../../Data/productsData.jsx';
+import titleImg from "../../assets/imgs/AbstractDesign.png"
+import TitleComponent from '../TitleComponent/TitleComponent.jsx';
+import ProductComponent from '../ProductComponent/ProductComponent.jsx';
 
 export default function ProductsPageComponent() {
      const [activeTab, setActiveTab] = useState('Women');
