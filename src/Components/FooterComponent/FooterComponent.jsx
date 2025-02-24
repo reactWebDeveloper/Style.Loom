@@ -5,12 +5,12 @@ import emailArrow from "../../assets/imgs/Footer/arrowIcon.png"
 import { Link } from 'react-router-dom'
 import SocialIconComponent from '../SocialIconComponent/SocialIconComponent'
 import FooterLinksComponent from '../FooterLinksComponent/FooterLinksComponent'
-import TestimonialsComponent from '../TestimonialsComponent/TestimonialsComponent'
+import ClientsSliderComponent from '../ClientsSliderComponent/ClientsSliderComponent'
 
 export default function FooterComponent() {
   return (
     <footer>
-      <TestimonialsComponent />
+      <ClientsSliderComponent />
       <div className="footerParts">
         <div className="footerFirstPart border2">
           <img src={logo} className="logo" alt="logo" />

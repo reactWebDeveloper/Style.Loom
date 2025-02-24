@@ -18,7 +18,7 @@
 }
 
 .email h6 {
-  font-family: "Roboto";
+  font-family: var(--main-font);
   font-size: 22px;
   font-weight: 500;
   line-height: 25.78px;
@@ -38,7 +38,7 @@
 }
 
 .emailInput input::placeholder {
-  font-family: "Roboto Mono";
+  font-family: var(--second-font);
 }
 
 .emailInput button {
@@ -51,7 +51,7 @@
 }
 
 .footerThirdPart {
-  font-family: "Roboto Mono";
+  font-family: var(--second-font);
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -20,7 +20,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
-      {/* <FooterComponent /> */}
+      <FooterComponent />
     </div>
   );
 }

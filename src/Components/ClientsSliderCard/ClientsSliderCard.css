@@ -1,11 +1,11 @@
-.ET-testimonialsCard {
+.ET-ClientsSliderCard {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.ET-testimonialsCard span {
-  font-family: "Roboto";
+.ET-ClientsSliderCard span {
+  font-family: var(--main-font);
   color: var(--black20-color);
   font-size: 30px;
   font-weight: 400;
@@ -16,16 +16,16 @@
 
 /* figma design */
 @media (max-width:1919px) {
-  .ET-testimonialsCard {
+  .ET-ClientsSliderCard {
     gap: 12px;
   }
 
-  .ET-testimonialsCard img {
+  .ET-ClientsSliderCard img {
     width: 50px;
     height: 50px;
   }
 
-  .ET-testimonialsCard span {
+  .ET-ClientsSliderCard span {
     font-size: 24px;
     line-height: 28.8px;
   }
@@ -33,12 +33,12 @@
 
 /* figma design */
 @media (max-width:540px) {
-  .ET-testimonialsCard img {
+  .ET-ClientsSliderCard img {
     width: 40px;
     height: 40px;
   }
 
-  .ET-testimonialsCard span {
+  .ET-ClientsSliderCard span {
     font-size: 20px;
     line-height: 24px;
   }

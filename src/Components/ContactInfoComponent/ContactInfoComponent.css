@@ -1,13 +1,145 @@
 .ContactInfoComponent {
   padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.ContactInfoTitleComponent {
+  border: 2px dashed var(--black15-color);
+  border-radius: 20px 20px 0 0;
+}
+
+.ContactInfoTitleComponent .titleStarIcon {
+  top: 20px;
 }
 
 .ContactInfoComponent .ContactInfoTitle {
   padding: 50px;
   text-transform: uppercase;
   color: var(--white-color);
-  font-family: "Roboto";
+  font-family: var(--main-font);
   font-size: 30px;
   font-weight: 500;
   line-height: 35.16px;
+  margin-bottom: 0;
+  border-right: 2px dashed var(--black15-color);
+  border-left: 2px dashed var(--black15-color);
+}
+
+.contactInfo {
+  display: flex;
+  border: 2px dashed var(--black15-color);
+  border-top: 0;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+}
+
+.contactInfo .AA-trends-card {
+  text-align: center;
+}
+
+.contactInfo .AA-card-desc {
+  background-color: var(--black12-color);
+  color: var(--white-color);
+  padding: 18px 24px;
+  border-radius: 12px;
+  border: 1px dashed var(--black25-color);
+  border-image: url("../../assets/imgs/Contact/Line.png") 100 round;
+}
+
+
+/* start media */
+/* figma design */
+@media (max-width:1919px) {
+  .ContactInfoComponent {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .ContactInfoTitleComponent {
+    border-radius: 16px 16px 0 0;
+  }
+
+  .ContactInfoTitleComponent .titleStarIcon {
+    top: 0;
+    right: -15px;
+  }
+
+  .contactInfo {
+    border-radius: 0 0 16px 16px;
+  }
+
+  .ContactInfoComponent .ContactInfoTitle {
+    padding: 40px;
+    font-size: 24px;
+    line-height: 28.13px;
+  }
+
+  .contactInfo .AA-card-desc {
+    padding: 14px 20px;
+    border-radius: 8px;
+  }
+
+  .contactInfo .AA-bg {
+    top: -22px;
+  }
+}
+
+@media (max-width:1439px) {
+  .ContactInfoTitleComponent .titleStarIcon {
+    top: 10px;
+  }
+
+  .contactInfo .AA-bg {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width:1200px) {
+  .contactInfo .AA-trends-card:nth-child(2) {
+    border-right: 2px dashed var(--black15-color);
+  }
+
+  .contactInfo .AA-bg {
+    width: 110px;
+    height: 110px;
+    top: 0;
+  }
+}
+
+@media (max-width:992px) {
+  .contactInfo {
+    flex-wrap: wrap;
+  }
+
+  .contactInfo .AA-trends-card:nth-child(2) {
+    border-right: 0;
+  }
+}
+
+/* figma design */
+@media (max-width:540px) {
+  .ContactInfoComponent {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .ContactInfoTitleComponent {
+    border-bottom: 0;
+    border-radius: 14px 14px 0 0;
+  }
+
+  .contactInfo {
+    border-radius: 0 0 14px 14px;
+  }
+
+  .ContactInfoComponent .ContactInfoTitle {
+    display: none;
+  }
+}
+
+@media (max-width:389px) {
+  .contactInfo .AA-bg {
+    right: -15px;
+  }
 }
