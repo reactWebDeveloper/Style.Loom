@@ -19,8 +19,8 @@
 
 .spinner {
     position: relative;
-    width: 15.7px;
-    height: 15.7px;
+    width: 30px;
+    height: 30px;
  }
  
  .spinner div {
