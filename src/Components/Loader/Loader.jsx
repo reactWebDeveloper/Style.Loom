@@ -5,7 +5,14 @@ export default function Loader() {
   return (
     <section className='loaderComponent'> 
 
-    <div className='loader'></div>
+    
+<div class="spinner">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
     </section>
   )
 }

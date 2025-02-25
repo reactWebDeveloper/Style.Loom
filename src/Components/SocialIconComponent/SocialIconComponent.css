@@ -1,0 +1,46 @@
+.ET-socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.ET-socialFooterIcon {
+  padding: 16px;
+  background-color: var(--brown80-color);
+  width: 66px;
+  height: 66px;
+}
+
+/* start media */
+/* figma design */
+@media (max-width:1919px) {
+  .ET-socialIcons {
+    gap: 16px;
+  }
+
+  .ET-socialFooterIcon {
+    padding: 14px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .ET-socialFooterIcon img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* figma design */
+@media (max-width:768px) {
+  .ET-socialFooterIcon {
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .ET-socialFooterIcon img {
+    width: 24px;
+    height: 24px;
+  }
+}

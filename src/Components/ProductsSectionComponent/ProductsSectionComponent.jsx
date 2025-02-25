@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './ProductsSectionComponent.css'
 import { productsData } from '../../Data/productsData.jsx';
 import ProductComponent from '../ProductComponent/ProductComponent.jsx';
+import TitleComponent from '../TitleComponent/TitleComponent.jsx';
+import titleImg from "../../assets/imgs/AbstractDesign.png"
 export default function ProductsSectionComponent() {
   const [activeTab, setActiveTab] = useState('Women');
   const handleTabClick = (category) => {
@@ -16,7 +18,9 @@ export default function ProductsSectionComponent() {
     <div className='p-162 es-main-products-container'>
       <section className='es-products-section border1 d-flex flex-column'>
         <div className="es-upper d-flex flex-column">
-          <div className="es-title"></div>
+          <div className="es-title">
+            <TitleComponent title={'Elevate Your Style with Our Latest Collection'} desc={'Each piece is crafted to enhance your fashion statement.'} fullImage={false} img={titleImg}/>
+          </div>
           <ul className="es-tabs d-flex">
             {['All', 'Men', 'Women', 'Kids'].map((category) => (
               <li className={`es-tab border1 text-18 ${activeTab == category ? 'es-active-tab' : ""}`} 
