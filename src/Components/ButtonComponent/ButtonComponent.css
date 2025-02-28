@@ -1,0 +1,13 @@
+.es-custom-btn{
+    gap: 7.13px;
+    padding: 14px 20px;
+    border-radius: 8px;
+    background-color: var(--black12-color);
+    color: var(--white-color);
+    font-family: var(--main-font);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 21px;
+    outline: 1px dashed var(--brown60-color);
+    text-decoration: none;
+}

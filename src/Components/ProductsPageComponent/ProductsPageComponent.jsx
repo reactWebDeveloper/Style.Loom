@@ -5,6 +5,7 @@ import { productsData } from '../../Data/productsData.jsx';
 import titleImg from "../../assets/imgs/AbstractDesign.png"
 import TitleComponent from '../TitleComponent/TitleComponent.jsx';
 import ProductComponent from '../ProductComponent/ProductComponent.jsx';
+import ButtonComponent from '../ButtonComponent/ButtonComponent.jsx';
 
 export default function ProductsPageComponent() {
      const [activeTab, setActiveTab] = useState('Women');
@@ -17,7 +18,7 @@ export default function ProductsPageComponent() {
             : activeTab == "Men" ? productsData.menProductsData
             : productsData.kidsProductsData;
   return (
-    <div className='p-162 es-main-products-container'>
+    <div className='p-162 es-main-products-container product-page'>
       <section className='es-products-section border1 d-flex flex-column'>
         <div className="es-upper d-flex flex-column">
           <div className="es-title">
@@ -31,6 +32,10 @@ export default function ProductsPageComponent() {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="es-view-all border2 d-flex justify-content-between align-items-center">
+          <h3>Dress Collection</h3>
+          <ButtonComponent text={"View All"}/>
         </div>
         <div className="es-products d-flex flex-wrap">
           {filteredProducts.map((product, index) => (
