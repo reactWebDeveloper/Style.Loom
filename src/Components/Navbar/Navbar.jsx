@@ -78,11 +78,11 @@ export default function Navbar() {
                   Contact
                 </button>
               </Link>
-              {menuOpen && (
+              {/* {menuOpen && (
                 <button className="MR-closeButton" onClick={toggleMenu}>
                   <img src={CloseIcon} alt="Close Menu" />
                 </button>
-              )}
+              )} */}
             </div>
           </div>
 
@@ -101,9 +101,14 @@ export default function Navbar() {
                 <img src={basket} alt="basket" />
               </button>
               </Link>
-              
-              <button className="MR-toggleIcon" onClick={toggleMenu}>
-                <img src={ToggleIcon} alt="Toggle Icon" />
+              <button
+                className={`${menuOpen ? "MR-closeButton" : "MR-toggleIcon"}`}
+                onClick={toggleMenu}
+              >
+                <img
+                  src={menuOpen ? CloseIcon : ToggleIcon}
+                  alt="Toggle Menu"
+                />
               </button>
             </div>
           </div>

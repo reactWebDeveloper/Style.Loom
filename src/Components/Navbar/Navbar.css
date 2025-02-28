@@ -148,7 +148,6 @@ nav {
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
         backdrop-filter: blur(10px);
-
     }
 
     /* Button width for mobile */
@@ -188,9 +187,22 @@ nav {
     /* Close button display for responsive menu */
     .MR-closeButton {
         display: block;
-        background: transparent;
+        padding: 14px;
+        border-radius: 10px;
         border: none;
+        background-color: var(--brown60-color);
         cursor: pointer;
+        animation: rotate-animation 0.3s ease-in-out forwards;
+    }
+
+    @keyframes rotate-animation {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(180deg);
+        }
     }
 
     .MR-closeButton img {
