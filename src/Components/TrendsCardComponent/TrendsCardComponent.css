@@ -93,8 +93,17 @@
         padding-bottom: 12px;
     }
     
-    .text-18{
+    /* .text-18{
         font-size: 1rem !important;
         line-height: 1.5rem !important;
+    } */
+}
+
+@media (max-width:540px) {
+    .AA-icon {
+        padding-bottom: 24px;
+    }
+    .AA-card-title {
+        padding-bottom: 10px;
     }
 }

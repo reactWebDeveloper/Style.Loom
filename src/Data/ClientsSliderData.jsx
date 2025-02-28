@@ -1,6 +1,6 @@
 import icon from "../assets/imgs/Footer/Vector.png"
 
-export const TestimonialsCardData = [
+export const ClientsSliderData = [
   {
     img: icon,
     txt: "T-shirt"
