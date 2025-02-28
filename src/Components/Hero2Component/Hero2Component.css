@@ -1,0 +1,35 @@
+
+
+.AA-hero2 {
+  padding-top: 120px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.slide-content {
+  height: 50vh; /* Adjust as needed */
+}
+
+.slide-content img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+/* Style for pagination dots */
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important; 
+  background: var(--brown60-color) !important;
+  opacity: 1 !important;
+  border-radius: 50% !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: white !important;
+}

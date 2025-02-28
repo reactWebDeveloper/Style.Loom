@@ -1,0 +1,11 @@
+.AA-closeButton {
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.AA-closeButton img {
+    width: 30px;
+    height: 30px;
+}
