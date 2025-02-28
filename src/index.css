@@ -11,7 +11,218 @@
 
 :root {
   --white-color: #fff;
+  --black-color: #000;/* Google Font: Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jaro:opsz@6..72&family=Lexend:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* Google Font: Roboto Mono */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jaro:opsz@6..72&family=Lexend:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-color: #fff;
   --black-color: #000;
+
+  --brown60-color: #ae9b84;
+  --brown65-color: #b8a893;
+  --brown70-color: #c2b4a3;
+  --brown80-color: #d6cdc2;
+  --brown90-color: #ebe6e0;
+  --brown95-color: #f5f3f0;
+  --brown97-color: #f9f8f6;
+  --brown99-color: #fdfdfc;
+
+  --black06-color: #0f0f0f;
+  --black10-color: #1a1a1a;
+  --black12-color: #1f1f1f;
+  --black15-color: #262626;
+  --black20-color: #333333;
+  --black25-color: #404040;
+  --black30-color: #4d4d4d;
+  --black35-color: #595959;
+
+  --gray40-color: #676665;
+  --gray50-color: #81807e;
+  --gray70-color: #b3b3b2;
+  --gray80-color: #cccccc;
+  --gray90-color: #e6e6e6;
+  --gray95-color: #f2f2f2;
+  --gray97-color: #f7f7f7;
+  --gray99-color: #fcfcfc;
+
+  --main-font: "Roboto", serif;
+  --second-font: "Roboto Mono", serif;
+}
+
+.centring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border2 {
+  border: 2px dashed var(--black15-color);
+}
+
+.border1 {
+  border: 1px dashed var(--black20-color);
+}
+
+.p-162 {
+  padding-inline: 8.4375%;
+}
+
+.p-80 {
+  padding-inline: 4.16669%;
+}
+
+.p-60 {
+  padding-inline: 3.125%;
+}
+
+.p-30 {
+  padding-inline: 1.5625%;
+}
+
+.rounded-12 {
+  border-radius: 0.75rem;
+}
+
+.rounded-20 {
+  border-radius: 1.25rem;
+}
+
+.text-48 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.51562rem;
+}
+
+.text-24 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2.25rem;
+}
+
+.text-18 {
+  /* here 18lg 16md 14sm  */
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
+
+.text-btn-18 {
+  /* here 18lg 14md and 14sm  */
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6875rem;
+}
+::-webkit-scrollbar{
+  width: 8px;
+  background-color: var(--black15-color);
+}
+::-webkit-scrollbar-thumb{
+ border-radius: 5px;
+  background: linear-gradient(transparent,#595959);
+
+}
+::-webkit-scrollbar-thumb:hover{
+ border-radius: 5px;
+ background: linear-gradient(transparent,#f2f2f2);
+}
+
+
+
+
+
+
+
+@media (max-width: 1919px) {
+  .border2 {
+    border: 1.5px dashed var(--black15-color);
+  }
+
+  .p-162 {
+    padding-inline: 5.5559%;
+  }
+
+  .p-60 {
+    padding-inline: 3.47229%;
+  }
+
+  .p-30 {
+    padding-inline: 1.38889%;
+  }
+
+  .rounded-12 {
+    border-radius: 0.5rem;
+  }
+
+  .rounded-20 {
+    border-radius: 1rem;
+  }
+
+  .text-48 {
+    font-size: 2.375rem;
+    line-height: 2.783125rem;
+  }
+
+  .text-24 {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
+
+  .text-18 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .text-btn-18 {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+
+}
+
+@media (max-width: 540px) {
+  .border2 {
+    border: 1px dashed var(--black15-color);
+  }
+
+  .p-162 {
+    padding-inline: 4.10256410256%;
+  }
+
+  .p-80 {
+    padding-inline: 5.1289%;
+  }
+
+  .p-60 {
+    padding-inline: 7.6929%;
+  }
+
+  .rounded-20 {
+    border-radius: 0.875rem;
+  }
+
+  .text-48 {
+    font-size: 1.75rem;
+    line-height: 2.05062rem;
+  }
+
+  .text-24 {
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+
+  .text-18 {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
+}
 
   --brown60-color: #ae9b84;
   --brown65-color: #b8a893;

@@ -10,7 +10,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FooterComponent from './Components/FooterComponent/FooterComponent'
 import HandleLoadingComponent from "./Components/HandleLoadingComponent/HandleLoadingComponent";
-
+import ScrolToTopButton from "./Components/ScrollToTopButton/ScrollToTopButton.jsx";
 
 function App() {
   return (
@@ -27,6 +27,8 @@ function App() {
         </Route>
 
       </Routes>
+      <ScrolToTopButton />
+
       <FooterComponent />
     </div>
   );
