@@ -1,0 +1,35 @@
+.product-page{
+    padding-top: 100px;
+}
+.es-view-all{
+    padding: 30px;
+}
+.es-view-all h3{
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 1.875rem;
+    line-height: 35.16px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+@media (max-width: 1919px) {
+    .es-view-all{
+        padding: 24px;
+    }
+    .es-view-all h3{
+        font-size: 1.625rem;
+        line-height: 30.47px;
+    }
+}
+@media (max-width: 540px) {
+    .es-view-all{
+        padding: 24px;
+    }
+    .es-view-all .es-custom-btn{
+        display: none !important;
+    }
+    .es-view-all h3{
+        font-size: 1.5rem;
+        line-height: 28.13px;
+    }
+}
