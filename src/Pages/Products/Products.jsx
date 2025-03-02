@@ -1,8 +1,9 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
+import './Products.css'
 export default function Products() {
   return (
-    <div>
+    <div className='product'>
       
     </div>
   )
