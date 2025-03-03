@@ -5,7 +5,6 @@ import basket from "./../../assets/imgs/NavBar/Union.png";
 import ToggleIcon from "./../../assets/imgs/NavBar/Icon.png";
 import CloseIcon from "./../../assets/imgs/NavBar/close.svg";
 import { Link } from "react-router-dom";
-
 export default function Navbar() {
   // Retrieve the active link from localStorage or set it to "Home" by default
   const [activeLink, setActiveLink] = useState(
@@ -35,9 +34,8 @@ export default function Navbar() {
             <div className="MR-buttonContainer">
               <Link to="/" onClick={() => setActiveLink("/")}>
                 <button
-                  className={`text-btn-18 rounded-12 ${
-                    activeLink === "/" ? "activeLink" : "MR-notActive"
-                  }`}
+                  className={`text-btn-18 rounded-12 ${activeLink === "/" ? "activeLink" : "MR-notActive"
+                    }`}
                 >
                   Home
                 </button>
@@ -45,9 +43,8 @@ export default function Navbar() {
 
               <Link to="/products" onClick={() => setActiveLink("/products")}>
                 <button
-                  className={`text-btn-18 rounded-12 ${
-                    activeLink === "/products" ? "activeLink" : "MR-notActive"
-                  }`}
+                  className={`text-btn-18 rounded-12 ${activeLink === "/products" ? "activeLink" : "MR-notActive"
+                    }`}
                 >
                   Products
                 </button>
@@ -65,23 +62,27 @@ export default function Navbar() {
 
             {/* Right section with basket and contact buttons */}
             <div className="MR-buttonContainer2">
+              <Link  to="/cart">
               <button className="MR-basketButton rounded-12">
                 <img src={basket} alt="basket" />
               </button>
+              </Link>
+              {/* <button className="MR-basketButton rounded-12">
+                <img src={basket} alt="basket" />
+              </button> */}
               <Link to="/contact" onClick={() => setActiveLink("/contact")}>
                 <button
-                  className={`MR-contactButton text-btn-18 rounded-12 ${
-                    activeLink === "/contact"
-                  }`}
+                  className={`MR-contactButton text-btn-18 rounded-12 ${activeLink === "/contact"
+                    }`}
                 >
                   Contact
                 </button>
               </Link>
-              {menuOpen && (
+              {/* {menuOpen && (
                 <button className="MR-closeButton" onClick={toggleMenu}>
                   <img src={CloseIcon} alt="Close Menu" />
                 </button>
-              )}
+              )} */}
             </div>
           </div>
 
@@ -95,11 +96,19 @@ export default function Navbar() {
               />
             </Link>
             <div className="MR-responsiveNavButtonContainer">
+              <Link  to="/cart">
               <button className="MR-basketButton rounded-12">
                 <img src={basket} alt="basket" />
               </button>
-              <button className="MR-toggleIcon" onClick={toggleMenu}>
-                <img src={ToggleIcon} alt="Toggle Icon" />
+              </Link>
+              <button
+                className={`${menuOpen ? "MR-closeButton" : "MR-toggleIcon"}`}
+                onClick={toggleMenu}
+              >
+                <img
+                  src={menuOpen ? CloseIcon : ToggleIcon}
+                  alt="Toggle Menu"
+                />
               </button>
             </div>
           </div>

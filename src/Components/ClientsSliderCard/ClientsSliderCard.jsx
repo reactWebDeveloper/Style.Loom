@@ -1,10 +1,10 @@
 import React from 'react'
-import "./TestimonialsCard.css"
+import "./ClientsSliderCard.css"
 
-export default function TestimonialsCard({ data }) {
+export default function ClientsSliderCard({ data }) {
   return (
     <>
-      <div className="ET-testimonialsCard">
+      <div className="ET-ClientsSliderCard">
         <img src={data.img} />
         <span> {data.txt} </span>
       </div>

@@ -25,7 +25,7 @@ const TrendsData = storedValueTrendsData ? JSON.parse(storedValueTrendsData) : [
     desc:
       "Every garment at StyleLoom is crafted with passion, reflecting our commitment to quality and innovation.",
     icon: icon1,
-    iconsm: iconsm1,
+    iconSm: iconsm1,
     bg: bg1
   },
   {
@@ -33,7 +33,7 @@ const TrendsData = storedValueTrendsData ? JSON.parse(storedValueTrendsData) : [
     desc:
       "We're more than a brand; we're trendsetters, curating styles that empower and inspire confidence.",
     icon: icon2,
-    iconsm: iconsm2,
+    iconSm: iconsm2,
     bg: bg2
   },
   {
@@ -41,7 +41,7 @@ const TrendsData = storedValueTrendsData ? JSON.parse(storedValueTrendsData) : [
     desc:
       "At StyleLoom, our customers are at the heart of everything we do. Your satisfaction is our measure of success.",
     icon: icon3,
-    iconsm: iconsm3,
+    iconSm: iconsm3,
     bg: bg3
   },
   {
@@ -49,7 +49,7 @@ const TrendsData = storedValueTrendsData ? JSON.parse(storedValueTrendsData) : [
     desc:
       "Influenced by global trends, we bring you a diverse and dynamic collection, embodying the spirit of fashion from around the world.",
     icon: icon4,
-    iconsm: iconsm4,
+    iconSm: iconsm4,
     bg: bg4
   },
   {
@@ -57,7 +57,7 @@ const TrendsData = storedValueTrendsData ? JSON.parse(storedValueTrendsData) : [
     desc:
       "Beyond clothing, StyleLoom is a lifestyle. Join us on a journey of self-expression and empowerment through fashion.",
     icon: icon5,
-    iconsm: iconsm5,
+    iconSm: iconsm5,
     bg: bg5
   },
   {
@@ -65,7 +65,7 @@ const TrendsData = storedValueTrendsData ? JSON.parse(storedValueTrendsData) : [
     desc:
       "StyleLoom is committed to sustainability, integrating eco-friendly practices into our production process.",
     icon: icon6,
-    iconsm: iconsm6,
+    iconSm: iconsm6,
     bg: bg6
   }
 ];

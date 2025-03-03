@@ -1,0 +1,35 @@
+
+.AA-pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .AA-pagination button {
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: none;
+    background-color: var(--black10-color);
+    color: var(--gray70-color);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-family: var(--main-font);
+  }
+  
+  .AA-pagination button:hover {
+    background-color: var(--brown60-color);
+  }
+  
+  .AA-pagination button.active {
+    background-color: var(--brown60-color);
+    color: white;
+  }
+  
+  .AA-pagination button:disabled {
+    background-color: #ccc;
+    color: var(--black-color);
+    cursor: not-allowed;
+  }

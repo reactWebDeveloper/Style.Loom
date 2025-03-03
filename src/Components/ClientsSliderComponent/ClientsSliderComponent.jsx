@@ -1,14 +1,14 @@
 import React from 'react'
-import "./TestimonialsComponent.css"
+import "./ClientsSliderComponent.css"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
-import TestimonialsCard from "../../Components/TestimonialsCard/TestimonialsCard";
-import { TestimonialsCardData } from '../../Data/TestimonialsCardData';
+import ClientsSliderCard from "../ClientsSliderCard/ClientsSliderCard";
+import { ClientsSliderData } from '../../Data/ClientsSliderData';
 
-export default function TestimonialsComponent() {
+export default function ClientsSliderComponent() {
   return (
     <>
-      <section className="testimonialsComponent border2">
+      <section className="ClientsSliderComponent border2">
         <Swiper
           loop={true}
           modules={[Autoplay]}
@@ -21,10 +21,10 @@ export default function TestimonialsComponent() {
           grabCursor={true}
         >
           {
-            TestimonialsCardData.map((e, index) => {
+            ClientsSliderData.map((e, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <TestimonialsCard data={e} />
+                  <ClientsSliderCard data={e} />
                 </SwiperSlide>
               )
             })

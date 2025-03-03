@@ -1,10 +1,13 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import './Products.css'
+import ProductsPageComponent from '../../Components/productsPageComponent/productsPageComponent'
+import FAQComponent from '../../Components/FAQComponent/FAQComponent'
+
+
 export default function Products() {
   return (
-    <div className='product'>
-      
+    <div>
+      <ProductsPageComponent/>
+      <FAQComponent/>
     </div>
   )
 }

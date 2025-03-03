@@ -1,0 +1,132 @@
+.Af-cart-container {
+    width: 100%;
+    background-color: var(--black06-color);
+    padding-top: 160px;
+    padding-bottom: 100px;
+
+}
+
+.Af-cart-card-father {
+    border: 2px dashed var(--black20-color);
+    width: 100%;
+    position: relative;
+}
+
+.Af-cart-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    border-bottom: 2px dashed var(--black20-color);
+}
+
+.Af-cart-card-img-desc {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.Af-cart-card-img-desc img {
+    width: 30.06%;
+    border-radius: 10%;
+}
+
+.Af-cart-card-desc h4 {
+    color: var(--white-color);
+}
+
+.Af-cart-card-desc p {
+    color: var(--gray50-color);
+}
+
+.Af-delete-product {
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    margin-bottom: 10px;
+    font-size: 58px;
+    color: red;
+}
+
+.Af-product-count {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white-color);
+}
+
+.Af-product-count button {
+    border: 1px solid var(--black20-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    outline: 0;
+    background-color: inherit;
+    color: var(--white-color);
+}
+
+.Af-Payment-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.Af-Payment-Section h3 {
+    color: var(--white-color);
+}
+
+.Af-Payment-Section button {
+    background-color: var(--brown60-color);
+    border: none;
+    padding: 18px 30px;
+    font-weight: 500 !important;
+    cursor: pointer;
+}
+
+
+@media(max-width:992px) {
+    .Af-cart-card {
+        padding: 30px 30px 20px;
+    }
+
+    .Af-delete-product {
+        font-size: 48px;
+    }
+
+    .Af-cart-card-desc h4 {
+        font-size: 24px;
+    }
+}
+
+@media(max-width:768px) {
+    .Af-cart-card-desc h4 {
+        font-size: 20px;
+        line-height: 1.2rem;
+    }
+    .Af-cart-card-img-desc{
+        align-items: flex-start;
+    }
+    .Af-Payment-Section{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width:540px){
+    .Af-cart-card-img-desc,.Af-cart-card{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .Af-cart-card-img-desc img{
+        width: 100%;
+    }
+    .Af-cart-card-desc h4 {
+        font-size: 30px;
+        line-height: 1.9rem;
+    }
+}
