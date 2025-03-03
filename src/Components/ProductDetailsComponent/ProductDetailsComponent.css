@@ -1,6 +1,5 @@
 .ProductDetailsComponent{
-    border-radius: 20px;
-    border: 2px dashed var(--black12-color);
+    padding-top: 100px;
 }
 h2,p{
     margin-bottom: 0;
@@ -72,6 +71,8 @@ h2,p{
     width: 100%;
     display: flex;
     justify-content: center;
+    border: 2px dashed var(--black15-color);
+    border-top: none;
 }
 .detailsImages img{
     width: 100%;
@@ -92,6 +93,7 @@ h2,p{
     width: 100%;
     font-family: var(--main-font);
     display: flex;
+    border: 2px dashed var(--black15-color);
 }
 /* left side style */
 .detailsLower .lowerLeft{

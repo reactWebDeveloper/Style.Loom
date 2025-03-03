@@ -7,20 +7,20 @@ import womanTop from './../../assets/imgs/Products/Image-15.webp'
 import womanBottom from './../../assets/imgs/Products/Image-16.webp'
 import materials from './../../assets/imgs/Products/Image-17.webp'
 import star from './../../assets/imgs/Icons/Shape-3.png'
-export default function ProductDetailsComponent() {
+export default function ProductDetailsComponent({product}) {
   return (
     <div className='ProductDetailsComponent p-162 border2'>
       <div className="detailsHeader p-80">
         <div className="headerLeft">
-          <h2 className='text-48 '>Elegant Evening Gown</h2>
-          <p>Fitted bodice, flowing skirt <span className='text-18'>In stock</span></p>
+          <h2 className='text-48 '>{product.proTitle}</h2>
+          <p>{product.proFit}<span className='text-18'>In stock</span></p>
         </div>
         <div className="headerright centring">
           <button className='addToCartBTN'><img src={addToCart}/>Add To Cart</button>
           <button className='showNowBTN'><img src={shopIcon}/>Shop Now</button>
         </div>
       </div>
-      <div className="detailsImages border2">
+      <div className="detailsImages">
         <div className="detailsleft">
           <img src={womanLeft} className='womanTochingFace'/>
         </div>
@@ -29,7 +29,7 @@ export default function ProductDetailsComponent() {
           <img src={womanBottom} className='sheIsNotTochingFace'/>
         </div>
       </div>
-      <div className="detailsLower border2">
+      <div className="detailsLower">
         <div className="lowerLeft">
           <h3 className='border-btm-2 p-50-80'>Materials, Care and origin</h3>
           <div className="joinLife border-btm-2 p-50-80">
@@ -65,7 +65,7 @@ export default function ProductDetailsComponent() {
             <h4 className='h4-sm-title'>price</h4>
             <div className="price-container">
               <div className="price-value">
-                <h3 id='price'>$89.99</h3>
+                <h3 id='price'>${product.proPrice}</h3>
                 <span className='text-18'>( MRP incl. of all taxes )</span>
               </div>
               <button className='addToCartBTN'><img src={addToCart}/>Add To Cart</button>

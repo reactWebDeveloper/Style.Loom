@@ -74,6 +74,9 @@
     background-color: var(--black12-color);
     font-family: var(--main-font);
 }
+.es-product-card > a{
+    text-decoration: none;
+}
 
 @media (max-width: 1919px) {
     .es-product-card {
