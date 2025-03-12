@@ -22,11 +22,11 @@
   .AA-pagination button:hover {
     background-color: var(--brown60-color);
   }
-  
+/*   
   .AA-pagination button.active {
     background-color: var(--brown60-color);
     color: white;
-  }
+  } */
   
   .AA-pagination button:disabled {
     background-color: #ccc;
