@@ -74,10 +74,11 @@ input[type="text"] {
 }
 
 .Af-cvv-expiry-container input {
-    width: 48%; 
+    width: 90%; 
     padding: 10px; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
+    margin-bottom: 5px;
 }
 
 .Af-save-button {
