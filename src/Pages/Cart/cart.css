@@ -87,11 +87,17 @@
     font-weight: 500 !important;
     cursor: pointer;
 }
-
-
+.Af-empty{
+    text-align: center;
+    color: var(--white-color);
+    padding: 50px;
+}
+.Af-price{
+    padding: 10px 0;
+}
 @media(max-width:992px) {
     .Af-cart-card {
-        padding: 30px 30px 20px;
+        padding: 30px 20px 20px;
     }
 
     .Af-delete-product {
@@ -100,6 +106,10 @@
 
     .Af-cart-card-desc h4 {
         font-size: 24px;
+    }
+    .AF-cart-product-name{
+        font-size: 1.5rem !important;
+        margin-bottom: 0;
     }
 }
 
